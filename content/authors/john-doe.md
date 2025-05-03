@@ -1,4 +1,5 @@
 ---
+layout: layouts/author.njk
 name: John Doe
 email: john@example.com
 website: https://johndoe.com
