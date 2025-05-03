@@ -11,11 +11,6 @@
 <div>
 {% if post.data.cover %}
 <a href="{{ post.url }}" style="float: left; margin-right: 1.5rem;">
-<pre style="font-size: 10px; color: #999; display: none;">
-Path: {{ post.data.path | dump }}
-Cover: {{ post.data.cover | dump }}
-Full path: {{ 'blog/books' + post.data.path + '/' + post.data.cover | dump }}
-</pre>
 {% image 'blog/books' + post.data.path + '/' + post.data.cover, post.data.title, "80px" %}
 </a>
 {% endif %}

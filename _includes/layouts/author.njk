@@ -1,10 +1,6 @@
 ---
 layout: layouts/base.njk
 ---
-<div class="author-navigation">
-  <a href="/authors/">← All Authors</a>
-</div>
-
 <h1>{{ name }}</h1>
 {% if email %}<p>Email: {{ email }}</p>{% endif %}
 {% if website %}<p>Website: <a href="{{ website }}">{{ website }}</a></p>{% endif %}
@@ -25,7 +21,7 @@ layout: layouts/base.njk
 
 {% if authorBooks.length > 0 %}
   {% for post in authorBooks %}
-    <li class="book-item">
+    <li class="book-item wa-flank">
       <div class="book-cover" style="margin-right: 10px;">
         {% if post.data.cover %}
           <a href="{{ post.url }}">
@@ -44,7 +40,7 @@ layout: layouts/base.njk
           {{ post.templateContent | excerpt | safe }}
         </div>
       </div>
-    </li>
+    </div>
   {% endfor %}
 {% else %}
   <li>No books found for this author.</li>

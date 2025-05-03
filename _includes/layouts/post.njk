@@ -15,13 +15,16 @@ layout: layouts/base.njk
 	<li>ISBN: <a href="https://www.thalia.de/suche?filterPATHROOT=&sq={{ isbn }}">{{ isbn }}</a></li>
 </ul>
 
+<div class="wa-flank wa-gap-m">
+<div>
 {% if cover %}
-    <div style="float: left; margin-right: 1.5rem; margin-top: 1rem;">
     {% image cover, title, "200px" %}
-    </div>
   {% endif %}
-
+</div>
+<div>
 {{ content | safe }}
+</div>
+</div>
 
 {%- if collections.posts %}
 {%- set previousPost = collections.posts | getPreviousCollectionItem %}
