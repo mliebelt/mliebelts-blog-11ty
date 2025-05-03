@@ -1,0 +1,52 @@
+---
+layout: layouts/base.njk
+---
+<div class="author-navigation">
+  <a href="/authors/">← All Authors</a>
+</div>
+
+<h1>{{ name }}</h1>
+{% if email %}<p>Email: {{ email }}</p>{% endif %}
+{% if website %}<p>Website: <a href="{{ website }}">{{ website }}</a></p>{% endif %}
+
+{% if content %}
+  <div class="author-bio">
+    {{ content | safe }}
+  </div>
+{% else %}
+  <div class="author-bio">
+    <p>No additional information is available for this author.</p>
+  </div>
+{% endif %}
+
+<h2>Books by {{ name }}</h2>
+<ul class="book-list">
+{% set authorBooks = collections.posts | byAuthor(name) | sortByTitle %}
+
+{% if authorBooks.length > 0 %}
+  {% for post in authorBooks %}
+    <li class="book-item">
+      <div class="book-cover" style="margin-right: 10px;">
+        {% if post.data.cover %}
+          <a href="{{ post.url }}">
+            <img src="/blog/books{{ post.data.path }}/{{ post.data.cover }}"
+         alt="{{ post.data.title }}"
+         width="120px">
+          </a>
+        {% else %}
+          <div class="no-cover">No Cover</div>
+        {% endif %}
+      </div>
+      <div class="book-details">
+        <a href="{{ post.url }}" class="book-title">{{ post.data.title }}</a>
+        <time class="book-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+        <div class="book-excerpt">
+          {{ post.templateContent | excerpt | safe }}
+        </div>
+      </div>
+    </li>
+  {% endfor %}
+{% else %}
+  <li>No books found for this author.</li>
+{% endif %}
+</ul>

@@ -1,0 +1,28 @@
+---
+layout: layouts/base.njk
+title: All Authors
+permalink: /authors/
+eleventyNavigation:
+  key: Authors
+  order: 3
+---
+
+<h1>All Authors</h1>
+
+<div class="authors-list">
+{% for author in collections.authors %}
+  <div class="author-section">
+    <h2>
+      <a href="/authors/{{ author.data.name | slugify }}/">{{ author.data.name }}</a>
+    </h2>
+
+    <ul class="book-list">
+    {% for post in collections.posts | byAuthor(author.data.name) %}
+      <li>
+        <a href="{{ post.url }}">{{ post.data.title }}</a>
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
+{% endfor %}
+</div>

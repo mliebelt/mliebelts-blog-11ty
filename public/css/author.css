@@ -1,0 +1,96 @@
+/* Author navigation */
+.author-navigation {
+	margin-bottom: 2rem;
+	padding-bottom: 0.5rem;
+	border-bottom: 1px solid #eee;
+}
+
+.author-navigation a {
+	text-decoration: none;
+	color: #333;
+	font-weight: bold;
+}
+
+.author-navigation a:hover {
+	color: #0d47a1;
+}
+
+/* Authors list page */
+.authors-list {
+	margin-top: 2rem;
+}
+
+.author-section {
+	margin-bottom: 3rem;
+	padding-bottom: 2rem;
+	border-bottom: 1px solid #eee;
+}
+
+.author-section h2 {
+	margin-bottom: 1rem;
+	padding-bottom: 0.5rem;
+	border-bottom: 2px solid #f0f0f0;
+}
+
+.author-section h2 a {
+	text-decoration: none;
+	color: #0d47a1;
+}
+
+.author-books {
+	list-style: none;
+	padding: 0;
+}
+
+.book-item {
+	margin-bottom: 1rem;
+	display: flex;
+	align-items: center;
+}
+
+.book-link {
+	font-weight: bold;
+	text-decoration: none;
+	color: #333;
+}
+
+.book-link:hover {
+	color: #0d47a1;
+}
+
+.book-date {
+	color: #666;
+	margin-left: 0.5rem;
+}
+
+.book-thumbnail {
+	margin-left: 1rem;
+}
+
+.authors-index {
+	margin: 2rem 0;
+	text-align: center;
+	padding: 1rem;
+	background-color: #f5f5f5;
+	border-radius: 5px;
+}
+
+.index-letter {
+	display: inline-block;
+	margin: 0 0.5rem;
+	font-weight: bold;
+	text-decoration: none;
+	color: #0d47a1;
+}
+
+.index-letter.inactive {
+	color: #ccc;
+	cursor: default;
+}
+
+.letter-heading {
+	margin-top: 2rem;
+	padding-top: 1rem;
+	border-top: 1px solid #eee;
+	color: #0d47a1;
+}
