@@ -116,6 +116,10 @@ module.exports = function (eleventyConfig) {
     return collection.getFilteredByGlob("content/blog/books/**/*.md");
   });
 
+  eleventyConfig.addCollection("authors", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("content/authors/*.md");
+  });
+
   // Features to make your build faster (when you need them)
 
   // If your passthrough copy gets heavy and cumbersome, add this line

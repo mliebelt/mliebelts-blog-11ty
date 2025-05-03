@@ -1,0 +1,20 @@
+---
+layout: layouts/base.njk
+---
+<h1>{{ name }}</h1>
+{% if email %}<p>Email: {{ email }}</p>{% endif %}
+{% if website %}<p>Website: <a href="{{ website }}">{{ website }}</a></p>{% endif %}
+
+{{ content | safe }}
+
+<h2>Books by {{ name }}</h2>
+<ul>
+{% for post in collections.posts | reverse %}
+  {% if post.data.author == name %}
+    <li>
+      <a href="{{ post.url }}">{{ post.data.title }}</a>
+      <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+    </li>
+  {% endif %}
+{% endfor %}
+</ul>

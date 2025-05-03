@@ -33,3 +33,14 @@ layout: layouts/base.njk
 </ul>
 {%- endif %}
 {%- endif %}
+---
+layout: layouts/base.njk
+---
+<article>
+  <h1>{{ title }}</h1>
+  <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
+  {% if author %}
+    <p>By <a href="/authors/{{ author | slugify }}/">{{ author }}</a></p>
+  {% endif %}
+  {{ content | safe }}
+</article>
