@@ -1,0 +1,31 @@
+.postlist-item h2 {
+	font-size: 1.5em;
+}
+
+.postlist-item .post-content h2 {
+	font-size: 1.5em;
+}
+
+.postlist-item-header {
+	font-size: 1.2em;
+}
+
+.postlist-item .post-content {
+	font-size: 1.5em;
+}
+
+main,
+.button-group-toolbar {
+	margin: 2em;
+	margin-left: 4em;
+	margin-right: 4em;
+}
+
+button,
+button-group-toolbar {
+	margin-bottom: 0em;
+}
+
+.header-anchor {
+	display: none;
+}

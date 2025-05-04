@@ -1,23 +1,23 @@
-{%- css %}.postlist { counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }} }{% endcss %}
-<ol reversed class="postlist">
-{% for post in postslist | reverse %}
-<li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
-<div>
-{% if post.data.author %}
-  <a href="/authors/{{ post.data.author | slugify }}/">{{ post.data.author }}</a>
-{% endif %}:
-<a href="{{ post.url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
+<div class="postlist">
+	{% for post in postslist | reverse %}
+	<div class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
+		<div class="postlist-item-header">
+			{% if post.data.author %}
+			  <a href="/authors/{{ post.data.author | slugify }}/">{{ post.data.author }}</a>
+			{% endif %}:
+			<a href="{{ post.url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
+			( <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | germanDate }}</time> )
+		</div>
+
+		<div>
+			{% if post.data.cover %}
+			<a href="{{ post.url }}" style="float: left; margin-right: 1.5rem;">
+				{% image 'blog/books' + post.data.path + '/' + post.data.cover, post.data.title, "80px" %}
+			</a>
+			{% endif %}
+			<div>
+				<p>{{ post.templateContent | excerpt | safe }}</p>
+			</div>
+		</div>
+	{% endfor %}
 </div>
-<div>
-{% if post.data.cover %}
-<a href="{{ post.url }}" style="float: left; margin-right: 1.5rem;">
-{% image 'blog/books' + post.data.path + '/' + post.data.cover, post.data.title, "80px" %}
-</a>
-{% endif %}
-<div>
-<p>{{ post.templateContent | excerpt | safe }}</p>
-<time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | germanDate }}</time></div>
-</div>
-</li>
-{% endfor %}
-</ol>

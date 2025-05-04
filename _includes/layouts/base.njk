@@ -1,14 +1,16 @@
 <!doctype html>
-<html lang="{{ metadata.language }}">
+<html lang="{{ metadata.language }}" class="wa-dark">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>{{ title or metadata.title }}</title>
 		<meta name="description" content="{{ description or metadata.description }}">
-		<link rel="stylesheet" href="https://early.webawesome.com/webawesome@3.0.0-alpha.12/dist/styles/themes/default.css" />
+		<link rel="stylesheet" href="https://early.webawesome.com/webawesome@3.0.0-alpha.12/dist/styles/themes/awesome.css" />
 		<link rel="stylesheet" href="https://early.webawesome.com/webawesome@3.0.0-alpha.12/dist/styles/webawesome.css" />
 		<script type="module" src="https://early.webawesome.com/webawesome@3.0.0-alpha.12/dist/webawesome.loader.js"></script>
 
+		{#- My own stylesheet #}
+		<link rel="stylesheet" href="/css/main.css" />
 
 		{#- Atom and JSON feeds included by default #}
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
@@ -34,13 +36,13 @@
 
 	</head>
 	<body>
-		<a href="#skip" class="visually-hidden">Skip to main content</a>
+	<!--	<a href="#skip" class="visually-hidden">Skip to main content</a> -->
 
 		<header>
 			<div class="button-group-toolbar">
-				<wa-button  size="medium" pill href="/" class="home-link">{{ metadata.title }}</wa-button>
+				<wa-button  size="medium" pill href="/" class="home-link wa-outlined">{{ metadata.title }}</wa-button>
 				{%- for entry in collections.all | eleventyNavigation %}
-					<wa-button  size="medium" pill href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</wa-button>
+					<wa-button  size="medium" pill class="wa-filled" href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</wa-button>
 				{%- endfor %}
 			</div>
 		</header>

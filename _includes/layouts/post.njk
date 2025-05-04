@@ -6,24 +6,24 @@ layout: layouts/base.njk
 {%- css %}{% include "public/css/prism-diff.css" %}{%- endcss %}
 <h1><a href="/authors/{{ author | slugify }}/">{{ author }}</a>: {{ title }}</h1>
 
-<ul class="post-metadata">
-	<li><time datetime="{{ page.date | htmlDateString }}">{{ page.date | germanDate }}</time></li>
+<div class="post-metadata wa-gap-l">
+	<div><time datetime="{{ page.date | htmlDateString }}">{{ page.date | germanDate }}</time></div>
 	{%- for tag in tags | filterTagList %}
 	{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-	<li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>{%- if not loop.last %}, {% endif %}</li>
+	<div><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>{%- if not loop.last %}, {% endif %}</div>
 	{%- endfor %}
-	<li>ISBN: <a href="https://www.thalia.de/suche?filterPATHROOT=&sq={{ isbn }}">{{ isbn }}</a></li>
-</ul>
+	<div>ISBN: <a href="https://www.thalia.de/suche?filterPATHROOT=&sq={{ isbn }}">{{ isbn }}</a></div>
+</div>
 
 <div class="wa-flank wa-gap-m">
-<div>
-{% if cover %}
-    {% image cover, title, "200px" %}
-  {% endif %}
-</div>
-<div>
-{{ content | safe }}
-</div>
+	<div class="post-cover">
+		{% if cover %}
+	    {% image cover, title, "200px" %}
+	  {% endif %}
+	</div>
+	<div class="post-content">
+	{{ content | safe }}
+	</div>
 </div>
 
 {%- if collections.posts %}
