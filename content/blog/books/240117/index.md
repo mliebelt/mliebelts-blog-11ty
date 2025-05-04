@@ -9,6 +9,7 @@ cover: "./pippi.jpg"
 isbn: "978-3-7891-1851-7"
 tags:
   - "roman"
+  - "kinder"
 layout: layouts/post.njk
 ---
 ## Alle Jahre wieder

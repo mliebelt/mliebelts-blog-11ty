@@ -4,7 +4,8 @@ layout: layouts/home.njk
 ---
 <h1>Themen der Bücher</h1>
 
-<p>Bücher können Themen bekommen, unten sieht man die aktuell verwendeten Themen.</p>
+<p>Bücher können Themen bekommen, unten sieht man die aktuell verwendeten Themen. Im Zweifelsfall kann man auch mehrere Themen vergeben,
+die Bücher tauchen dann bei allen Themen auf.</p>
 
 <ul>
 {% for tag in collections.all | getAllTags | filterTagList %}

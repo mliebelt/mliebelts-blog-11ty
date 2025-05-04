@@ -11,11 +11,11 @@ layout: layouts/base.njk
   </div>
 {% else %}
   <div class="author-bio">
-    <p>No additional information is available for this author.</p>
+    <p>Keine zusätzlichen Informationen verfügbar für diesen Autor.</p>
   </div>
 {% endif %}
 
-<h2>Books by {{ name }}</h2>
+<h2>Bücher von {{ name }}</h2>
 <ul class="book-list">
 {% set authorBooks = collections.posts | byAuthor(name) | sortByTitle %}
 
@@ -41,6 +41,6 @@ layout: layouts/base.njk
     </div>
   {% endfor %}
 {% else %}
-  <li>No books found for this author.</li>
+  <li>Keine Bücher gefunden für diesen Autor.</li>
 {% endif %}
 </ul>
