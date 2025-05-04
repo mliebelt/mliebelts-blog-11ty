@@ -25,9 +25,7 @@ layout: layouts/base.njk
       <div class="book-cover" style="margin-right: 10px;">
         {% if post.data.cover %}
           <a href="{{ post.url }}">
-            <img src="/blog/books{{ post.data.path }}/{{ post.data.cover }}"
-         alt="{{ post.data.title }}"
-         width="120px">
+            {% image '../blog/books' + post.data.path + '/' + post.data.cover, post.data.title, "120px" %}
           </a>
         {% else %}
           <div class="no-cover">No Cover</div>

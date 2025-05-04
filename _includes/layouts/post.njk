@@ -12,7 +12,7 @@ layout: layouts/base.njk
 	{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
 	<div><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>{%- if not loop.last %}, {% endif %}</div>
 	{%- endfor %}
-	<div>ISBN: <a href="https://www.thalia.de/suche?filterPATHROOT=&sq={{ isbn }}">{{ isbn }}</a></div>
+	<div>ISBN: <a href="https://www.thalia.de/suche?filterPATHROOT=&sq={{ isbn }}"  target="_blank" rel="noopener noreferrer">{{ isbn }}</a></div>
 </div>
 
 <div class="wa-flank wa-gap-m">
