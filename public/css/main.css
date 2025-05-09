@@ -1,5 +1,8 @@
-.postlist-item h2 {
+.postlist-item h2,
+.book-excerpt h2,
+.post-content h2 {
 	font-size: 1.5em;
+	margin-bottom: 0.3em;
 }
 
 .postlist-item .post-content h2 {

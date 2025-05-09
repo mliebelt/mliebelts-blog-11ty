@@ -1,4 +1,4 @@
-<div class="postlist">
+<div class="postlist wa-stack"  class=".wa-gap-xxl">
 	{% for post in postslist | reverse %}
 	<div class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
 		<div class="postlist-item-header">
@@ -6,13 +6,12 @@
 			  <a href="/authors/{{ post.data.author | slugify }}/">{{ post.data.author }}</a>
 			{% endif %}:
 			<a href="{{ post.url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
-			( <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | germanDate }}</time> )
+			<span style="white-space: nowrap;">(&nbsp;<time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | germanDate }}</time>&nbsp;)</span>
 		</div>
-
-		<div class="wa-flank wa-gap-m wa-align-items-start">
+		<div class="wa-flank wa-gap-xs wa-align-items-start">
 			{% if post.data.cover %}
 			<div>
-				<a href="{{ post.url }}" style="float: left; margin-right: 1.5rem;">
+				<a href="{{ post.url }}">
 					{% image 'blog/books' + post.data.path + '/' + post.data.cover, post.data.title, "80px" %}
 				</a>
 			</div>
@@ -21,5 +20,6 @@
 				{{ post.templateContent | excerpt | safe }}
 			</div>
 		</div>
+	</div>
 	{% endfor %}
 </div>

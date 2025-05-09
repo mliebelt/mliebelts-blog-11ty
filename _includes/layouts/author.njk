@@ -16,13 +16,13 @@ layout: layouts/base.njk
 {% endif %}
 
 <h2>Bücher von {{ name }}</h2>
-<ul class="book-list">
+<ul class="book-list wa-stack" class=".wa-gap-xl">
 {% set authorBooks = collections.posts | byAuthor(name) | sortByTitle %}
 
 {% if authorBooks.length > 0 %}
   {% for post in authorBooks %}
-    <li class="book-item wa-flank wa-align-items-start">
-      <div class="book-cover">
+    <li class="book-item wa-flank wa-align-items-start"  style="--flank-size: 120px;">
+      <div class="book-cover" >
         {% if post.data.cover %}
           <a href="{{ post.url }}">
             {% image '../blog/books' + post.data.path + '/' + post.data.cover, post.data.title, "120px" %}
@@ -32,13 +32,14 @@ layout: layouts/base.njk
         {% endif %}
       </div>
       <div class="book-details">
+      	<h4>
         <a href="{{ post.url }}" class="book-title">{{ post.data.title }}</a>
-        <time class="book-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+        <time class="book-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time></h4>
         <div class="book-excerpt">
           {{ post.templateContent | excerpt | safe }}
         </div>
-      </div>
-    </div>
+	    </div>
+    </li>
   {% endfor %}
 {% else %}
   <li>Keine Bücher gefunden für diesen Autor.</li>
