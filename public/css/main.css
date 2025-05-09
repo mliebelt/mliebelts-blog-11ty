@@ -29,3 +29,10 @@ button-group-toolbar {
 .header-anchor {
 	display: none;
 }
+
+.post-cover,
+.book-cover {
+	width: 20%;
+	max-width: 200px;
+	margin-top: 1em;
+}

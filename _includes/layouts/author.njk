@@ -21,8 +21,8 @@ layout: layouts/base.njk
 
 {% if authorBooks.length > 0 %}
   {% for post in authorBooks %}
-    <li class="book-item wa-flank">
-      <div class="book-cover" style="margin-right: 10px;">
+    <li class="book-item wa-flank wa-align-items-start">
+      <div class="book-cover">
         {% if post.data.cover %}
           <a href="{{ post.url }}">
             {% image '../blog/books' + post.data.path + '/' + post.data.cover, post.data.title, "120px" %}

@@ -9,14 +9,16 @@
 			( <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | germanDate }}</time> )
 		</div>
 
-		<div>
+		<div class="wa-flank wa-gap-m wa-align-items-start">
 			{% if post.data.cover %}
-			<a href="{{ post.url }}" style="float: left; margin-right: 1.5rem;">
-				{% image 'blog/books' + post.data.path + '/' + post.data.cover, post.data.title, "80px" %}
-			</a>
+			<div>
+				<a href="{{ post.url }}" style="float: left; margin-right: 1.5rem;">
+					{% image 'blog/books' + post.data.path + '/' + post.data.cover, post.data.title, "80px" %}
+				</a>
+			</div>
 			{% endif %}
 			<div>
-				<p>{{ post.templateContent | excerpt | safe }}</p>
+				{{ post.templateContent | excerpt | safe }}
 			</div>
 		</div>
 	{% endfor %}
