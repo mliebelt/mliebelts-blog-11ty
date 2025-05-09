@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ metadata.language }}" class="wa-dark">
+<html lang="{{ metadata.language }}" class="wa-light">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,18 +34,43 @@
 		{#- Or add from node_modules #}
 		{# {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %} #}
 
+		<script>
+			function toggleTheme() {
+				const html = document.documentElement;
+				if (html.classList.contains('wa-dark')) {
+					html.classList.remove('wa-dark');
+					localStorage.setItem('theme', 'light');
+				} else {
+					html.classList.add('wa-dark');
+					localStorage.setItem('theme', 'dark');
+				}
+			}
+
+			// Check for saved theme preference or use default 'wa-dark'
+			document.addEventListener('DOMContentLoaded', () => {
+				const savedTheme = localStorage.getItem('theme') || 'dark';
+				document.documentElement.classList.toggle('wa-dark', savedTheme === 'dark');
+			});
+		</script>
 	</head>
 	<body>
 	<!--	<a href="#skip" class="visually-hidden">Skip to main content</a> -->
 
-		<header>
-			<div class="button-group-toolbar">
-				<wa-button  size="medium" pill href="/" class="home-link wa-outlined">{{ metadata.title }}</wa-button>
-				{%- for entry in collections.all | eleventyNavigation %}
-					<wa-button  size="medium" pill class="wa-filled" href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</wa-button>
-				{%- endfor %}
-			</div>
-		</header>
+<header>
+    <div class="wa-flank">
+        <wa-button-group label="Navigation">
+            {%- for entry in collections.all | eleventyNavigation %}
+                <wa-button size="medium" pill class="wa-filled" href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</wa-button>
+            {%- endfor %}
+        </wa-button-group>
+        <div class="wa-align-items-end">
+            <wa-button size="medium" pill class="wa-filled" onclick="toggleTheme()">
+                <wa-icon name="moon" class="wa-dark-only"></wa-icon>
+                <wa-icon name="sun" class="wa-light-only"></wa-icon>
+            </wa-button>
+        </div>
+    </div>
+</header>
 
 		<main id="skip">
 			{{ content | safe }}
