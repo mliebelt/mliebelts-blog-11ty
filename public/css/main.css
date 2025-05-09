@@ -39,3 +39,10 @@ button-group-toolbar {
 	max-width: 200px;
 	margin-top: 1em;
 }
+
+#darkLight {
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	z-index: 1000;
+}
