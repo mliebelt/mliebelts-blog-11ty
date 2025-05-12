@@ -1,3 +1,38 @@
+:root {
+	--brand-color-light: var(--wa-color-red-40);
+	--brand-color-dark: var(--wa-color-green-60);
+	--brand-color: var(--brand-color-light);
+}
+
+.wa-dark {
+	--brand-color: var(--brand-color-dark);
+}
+
+/* Override link colors */
+a {
+	color: var(--brand-color);
+}
+
+a:visited {
+	color: var(--brand-color);
+}
+
+a:hover,
+a:focus {
+	color: color-mix(in srgb, var(--brand-color) 80%, black);
+}
+
+/* Style buttons with brand color */
+wa-button.wa-filled {
+	background-color: var(--brand-color);
+	color: white;
+}
+
+wa-button.wa-filled:hover,
+wa-button.wa-filled:focus {
+	background-color: color-mix(in srgb, var(--brand-color) 80%, black);
+}
+
 .postlist-item h2,
 .book-excerpt h2,
 .post-content h2 {
