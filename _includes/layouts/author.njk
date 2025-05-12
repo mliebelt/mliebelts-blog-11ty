@@ -34,7 +34,7 @@ layout: layouts/base.njk
       <div class="book-details">
       	<h4>
         <a href="{{ post.url }}" class="book-title">{{ post.data.title }}</a>
-        <time class="book-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time></h4>
+        <time class="book-date" datetime="{{ post.date }}">{{ post.date | germanDate  }}</time></h4>
         <div class="book-excerpt">
           {{ post.templateContent | excerpt | safe }}
         </div>
