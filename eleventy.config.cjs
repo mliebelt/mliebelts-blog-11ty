@@ -1,5 +1,6 @@
 const { DateTime } = require("luxon");
 const markdownItAnchor = require("markdown-it-anchor");
+const Image = require("@11ty/eleventy-img");
 
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
@@ -12,8 +13,26 @@ const pluginImages = require("./eleventy.config.images.cjs");
 const pluginAuthors = require("./eleventy.config.authors.cjs");
 const util = require("util");
 
+async function imageShortcode(src, alt, sizes) {
+	let metadata = await Image(src, {
+		widths: [300, 600],
+		formats: ["avif", "jpeg"],
+	});
+
+	let imageAttributes = {
+		alt,
+		sizes,
+		loading: "lazy",
+		decoding: "async",
+	};
+
+	return Image.generateHTML(metadata, imageAttributes);
+}
+
 /** @param {import('@11ty/eleventy').UserConfig} eleventyConfig */
 module.exports = function (eleventyConfig) {
+	// Add image shortcode
+	eleventyConfig.addAsyncShortcode("image", imageShortcode);
 	eleventyConfig.addPlugin(pluginAuthors);
 
 	eleventyConfig.addDataExtension("js", (contents) => {
@@ -68,13 +87,18 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPlugin(pluginBundle);
 
 	// Filters
+	eleventyConfig.addFilter("germanDate", (dateObj) => {
+		return DateTime.fromJSDate(dateObj, { zone: "utc" }).toLocaleString(DateTime.DATE_FULL, { locale: "de" });
+	});
+
+	eleventyConfig.addFilter("dateFormat", (date, format, locale) => {
+		locale = locale || "de"; // default to German
+		return DateTime.fromJSDate(date, { zone: "utc" }).toFormat(format, { locale: locale });
+	});
+
 	eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
 		// Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
 		return DateTime.fromJSDate(dateObj, { zone: zone || "utc" }).toFormat(format || "dd LLLL yyyy");
-	});
-
-	eleventyConfig.addFilter("germanDate", (dateObj) => {
-		return DateTime.fromJSDate(dateObj, { zone: "utc" }).setLocale("de").toLocaleString(DateTime.DATE_FULL);
 	});
 
 	eleventyConfig.addFilter("htmlDateString", (dateObj) => {
