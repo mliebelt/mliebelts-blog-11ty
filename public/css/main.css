@@ -81,3 +81,103 @@ button-group-toolbar {
 	right: 10px;
 	z-index: 1000;
 }
+
+.authors-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	gap: 1.5rem;
+	margin-top: 1rem;
+}
+
+.author-card {
+	border: 1px solid var(--wa-color-gray-20);
+	border-radius: 8px;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	transition: box-shadow 0.3s ease;
+}
+
+.author-card:hover {
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.author-image {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-bottom: 1rem;
+}
+
+.author-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.author-image-placeholder {
+	width: 100%;
+	height: 100%;
+	background-color: var(--wa-color-gray-20);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 2rem;
+	font-weight: bold;
+	color: var(--wa-color-gray-60);
+}
+
+.author-info h2 {
+	margin: 0 0 0.5rem 0;
+	font-size: 1.5rem;
+}
+
+.author-tagline {
+	font-style: italic;
+	color: var(--wa-color-gray-60);
+	margin-bottom: 0.5rem;
+}
+
+.author-meta {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 1rem 0;
+	font-size: 0.9rem;
+}
+
+.author-meta li {
+	margin-bottom: 0.25rem;
+}
+
+.book-count {
+	font-weight: bold;
+	margin-bottom: 0.5rem;
+}
+
+.book-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.book-list li {
+	margin-bottom: 0.5rem;
+}
+
+.book-year {
+	color: var(--wa-color-gray-60);
+	font-size: 0.9rem;
+}
+
+.view-all {
+	margin-top: 1rem;
+	display: inline-block;
+	color: var(--brand-color);
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.view-all:hover {
+	text-decoration: underline;
+}

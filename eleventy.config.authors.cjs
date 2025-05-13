@@ -1,21 +1,15 @@
 const fs = require("fs");
 const path = require("path");
+const slugify = require("slugify");
 
-// Improved slugify function that correctly handles German umlauts
-function slugify(text) {
-	return (
-		text
-			.toLowerCase()
-			// Replace umlauts with their ASCII equivalents
-			.replace(/ä/g, "ae")
-			.replace(/ö/g, "oe")
-			.replace(/ü/g, "ue")
-			.replace(/ß/g, "ss")
-			// Remove other special characters and replace spaces with hyphens
-			.replace(/[^\w\s-]/g, "")
-			.replace(/[\s_-]+/g, "-")
-			.replace(/^-+|-+$/g, "")
-	);
+// Custom slugify function that preserves periods
+function customSlugify(text) {
+	return slugify(text, {
+		replacement: "-",
+		remove: /[*+~.()'"!:@]/g,
+		lower: true,
+		strict: true,
+	});
 }
 
 module.exports = function (eleventyConfig) {
@@ -52,7 +46,7 @@ module.exports = function (eleventyConfig) {
 
 		// Generate files for missing authors
 		authors.forEach((author) => {
-			const slug = slugify(author); // Use our improved slugify function
+			const slug = customSlugify(author); // Use our custom slugify function
 			const authorFile = path.join(authorsDir, `${slug}.md`);
 
 			// Skip if author file already exists
@@ -64,10 +58,8 @@ module.exports = function (eleventyConfig) {
 			const content = `---
 layout: layouts/author.njk
 name: ${author}
-# email: optional@example.com
-# website: https://optional-website.com
 ---
-No additional information is available for this author.
+Keine weitere Info zum Autor verfügbar.
 `;
 
 			fs.writeFileSync(authorFile, content);

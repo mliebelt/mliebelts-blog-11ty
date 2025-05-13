@@ -1,47 +1,66 @@
 ---
 layout: layouts/base.njk
 ---
-<h1>{{ name }}</h1>
-{% if email %}<p>Email: {{ email }}</p>{% endif %}
-{% if website %}<p>Website: <a href="{{ website }}">{{ website }}</a></p>{% endif %}
+<article class="author-profile">
+  <header class="author-header">
+    <div class="author-image">
+      {% if image %}
+        {% image image, name, "200px" %}
+      {% else %}
+        <div class="author-image-placeholder">{{ name | getInitials }}</div>
+      {% endif %}
+    </div>
+    <div class="author-info">
+      <h1>{{ name }}</h1>
+      {% if tagline %}<p class="author-tagline">{{ tagline }}</p>{% endif %}
+      <ul class="author-meta">
+        {% if email %}<li>Email: {{ email }}</li>{% endif %}
+        {% if website %}<li>Website: <a href="{{ website }}">{{ website }}</a></li>{% endif %}
+      </ul>
+    </div>
+  </header>
 
-{% if content %}
-  <div class="author-bio">
-    {{ content | safe }}
-  </div>
-{% else %}
-  <div class="author-bio">
-    <p>Keine zusätzlichen Informationen verfügbar für diesen Autor.</p>
-  </div>
-{% endif %}
+  {% if content %}
+    <div class="author-bio">
+      {{ content | safe }}
+    </div>
+  {% else %}
+    <div class="author-bio">
+      <p>Keine zusätzlichen Informationen verfügbar für diesen Autor.</p>
+    </div>
+  {% endif %}
 
-<h2>Bücher von {{ name }}</h2>
-<ul class="book-list wa-stack" class=".wa-gap-xl">
-{% set authorBooks = collections.posts | byAuthor(name) | sortByTitle %}
-
-{% if authorBooks.length > 0 %}
-  {% for post in authorBooks %}
-    <li class="book-item wa-flank wa-align-items-start"  style="--flank-size: 120px;">
-      <div class="book-cover" >
-        {% if post.data.cover %}
-          <a href="{{ post.url }}">
-            {% image '../blog/books' + post.data.path + '/' + post.data.cover, post.data.title, "120px" %}
-          </a>
-        {% else %}
-          <div class="no-cover">No Cover</div>
-        {% endif %}
-      </div>
-      <div class="book-details">
-      	<h4>
-        <a href="{{ post.url }}" class="book-title">{{ post.data.title }}</a>
-        <time class="book-date" datetime="{{ post.date }}">{{ post.date | germanDate  }}</time></h4>
-        <div class="book-excerpt">
-          {{ post.templateContent | excerpt | safe }}
-        </div>
-	    </div>
-    </li>
-  {% endfor %}
-{% else %}
-  <li>Keine Bücher gefunden für diesen Autor.</li>
-{% endif %}
-</ul>
+<section class="author-books">
+  <h2>Bücher von {{ name }}</h2>
+  {% set authorBooks = collections.posts | byAuthor(name) | sort(true, false, 'date') %}
+  {% if authorBooks.length > 0 %}
+    <p class="book-count">{{ authorBooks.length }} Buch{% if authorBooks.length != 1 %}er{% endif %}</p>
+    <ul class="book-list wa-stack wa-gap-xl">
+      {% for post in authorBooks %}
+        <li class="book-item wa-flank wa-align-items-start" style="--flank-size: 120px;">
+          <div class="book-cover">
+            {% if post.data.cover %}
+              <a href="{{ post.url }}">
+                {% image '../blog/books' + post.data.path + '/' + post.data.cover, post.data.title, "120px" %}
+              </a>
+            {% else %}
+              <div class="no-cover">No Cover</div>
+            {% endif %}
+          </div>
+          <div class="book-details">
+            <h4>
+              <a href="{{ post.url }}" class="book-title">{{ post.data.title }}</a>
+              <time class="book-date" datetime="{{ post.date }}">{{ post.date | germanDate }}</time>
+            </h4>
+            <div class="book-excerpt">
+              {{ post.templateContent | excerpt | safe }}
+            </div>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>Keine Bücher gefunden für diesen Autor.</p>
+  {% endif %}
+</section>
+</article>

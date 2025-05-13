@@ -9,20 +9,41 @@ eleventyNavigation:
 
 <h1>All Authors</h1>
 
-<div class="authors-list">
-{% for author in collections.authors %}
-  <div class="author-section">
-    <h2>
-      <a href="/authors/{{ author.data.name | slugify }}/">{{ author.data.name }}</a>
-    </h2>
-
-    <ul class="book-list">
-    {% for post in collections.posts | byAuthor(author.data.name) %}
-      <li>
-        <a href="{{ post.url }}">{{ post.data.title }}</a>
-      </li>
-    {% endfor %}
-    </ul>
-  </div>
-{% endfor %}
+<div class="authors-grid">
+  {% set sortedAuthors = collections.authors | sort(attribute='data.name') %}
+  {% for author in sortedAuthors %}
+    {% set authorBooks = collections.posts | byAuthor(author.data.name) %}
+    <div class="author-card">
+      <div class="author-image">
+        {% if author.data.image %}
+          {% image "authors/" + author.data.image, author.data.name, "100px" %}
+        {% else %}
+          <div class="author-image-placeholder">{{ author.data.name | getInitials }}</div>
+        {% endif %}
+      </div>
+      <div class="author-info">
+        <h2>
+          <a href="/authors/{{ author.data.name | customSlugify }}/">{{ author.data.name }}</a>
+        </h2>
+        {% if author.data.tagline %}
+          <p class="author-tagline">{{ author.data.tagline }}</p>
+        {% endif %}
+        <p class="book-count">{{ authorBooks.length }} book{% if authorBooks.length != 1 %}s{% endif %}</p>
+      </div>
+      <div class="author-books">
+        <h3>Latest Books</h3>
+        <ul class="book-list">
+          {% for post in authorBooks | sort(true, false, 'date') | limit(3) %}
+            <li>
+              <a href="{{ post.url }}">{{ post.data.title }}</a>
+              <span class="book-year">({{ post.date | dateYear }})</span>
+            </li>
+          {% endfor %}
+        </ul>
+        {% if authorBooks.length > 3 %}
+          <a href="/authors/{{ author.data.name | customSlugify }}/" class="view-all">View all books</a>
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
 </div>

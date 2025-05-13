@@ -3,7 +3,7 @@
 	<div class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
 		<div class="postlist-item-header">
 			{% if post.data.author %}
-			  <a href="/authors/{{ post.data.author | slugify }}/">{{ post.data.author }}</a>
+			  <a href="/authors/{{ post.data.author | customSlugify }}/">{{ post.data.author }}</a>
 			{% endif %}:
 			<a href="{{ post.url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
 			<span style="white-space: nowrap;">(&nbsp;<time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | germanDate }}</time>&nbsp;)</span>

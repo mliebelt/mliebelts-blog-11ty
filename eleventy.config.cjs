@@ -1,6 +1,7 @@
 const { DateTime } = require("luxon");
 const markdownItAnchor = require("markdown-it-anchor");
 const Image = require("@11ty/eleventy-img");
+const slugify = require("slugify");
 
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
@@ -96,6 +97,10 @@ module.exports = function (eleventyConfig) {
 		return DateTime.fromJSDate(date, { zone: "utc" }).toFormat(format, { locale: locale });
 	});
 
+	eleventyConfig.addFilter("dateYear", (dateObj) => {
+		return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy");
+	});
+
 	eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
 		// Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
 		return DateTime.fromJSDate(dateObj, { zone: zone || "utc" }).toFormat(format || "dd LLLL yyyy");
@@ -104,6 +109,22 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addFilter("htmlDateString", (dateObj) => {
 		// dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
 		return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
+	});
+
+	eleventyConfig.addFilter("getInitials", function (name) {
+		return name
+			.split(" ")
+			.map((word) => word[0].toUpperCase())
+			.join("");
+	});
+
+	eleventyConfig.addFilter("customSlugify", function(str) {
+		return slugify(str, {
+			replacement: '-',
+			remove: /[*+~.()'"!:@]/g,
+			lower: true,
+			strict: true
+		});
 	});
 
 	// Get the first `n` elements of a collection.
@@ -134,6 +155,11 @@ module.exports = function (eleventyConfig) {
 
 	eleventyConfig.addFilter("filterTagList", function filterTagList(tags) {
 		return (tags || []).filter((tag) => ["all", "nav", "post", "posts"].indexOf(tag) === -1);
+	});
+
+	// Add a limit filter
+	eleventyConfig.addFilter("limit", function (arr, limit) {
+		return arr.slice(0, limit);
 	});
 
 	// To be used for showing an overview
@@ -196,7 +222,7 @@ module.exports = function (eleventyConfig) {
 				ariaHidden: false,
 			}),
 			level: [1, 2, 3, 4],
-			slugify: eleventyConfig.getFilter("slugify"),
+			slugify: eleventyConfig.getFilter("customSlugify"),
 		});
 	});
 
