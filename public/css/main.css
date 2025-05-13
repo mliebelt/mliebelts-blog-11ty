@@ -90,7 +90,7 @@ button-group-toolbar {
 }
 
 .author-card {
-	border: 1px solid var(--wa-color-gray-20);
+	border: 1px solid var(--brand-color);
 	border-radius: 8px;
 	padding: 1rem;
 	display: flex;
