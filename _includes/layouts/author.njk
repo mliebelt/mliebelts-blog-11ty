@@ -3,13 +3,18 @@ layout: layouts/base.njk
 ---
 <article class="author-profile">
   <header class="author-header">
-    <div class="author-image">
-      {% if image %}
-        {% image image, name, "200px" %}
-      {% else %}
-        <div class="author-image-placeholder">{{ name | getInitials }}</div>
+    <div class="author-image author-image-large">
+  {% if image %}
+    <div class="image-container">
+      {% image image, name, "200px" %}
+      {% if image-reference %}
+        <div class="image-overlay">{{ image-reference }}</div>
       {% endif %}
     </div>
+  {% else %}
+    <div class="author-image-placeholder">{{ name | getInitials }}</div>
+  {% endif %}
+</div>
     <div class="author-info">
       <h1>{{ name }}</h1>
       {% if tagline %}<p class="author-tagline">{{ tagline }}</p>{% endif %}

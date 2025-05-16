@@ -14,13 +14,15 @@ eleventyNavigation:
   {% for author in sortedAuthors %}
     {% set authorBooks = collections.posts | byAuthor(author.data.name) %}
     <div class="author-card">
-      <div class="author-image">
-        {% if author.data.image %}
-          {% image "authors/" + author.data.image, author.data.name, "100px" %}
-        {% else %}
-          <div class="author-image-placeholder">{{ author.data.name | getInitials }}</div>
-        {% endif %}
-      </div>
+      <div class="author-image author-image-small">
+			  {% if author.data.image %}
+			    <div class="image-container">
+			      {% image "authors/" + author.data.image, author.data.name, "100px" %}
+			    </div>
+			  {% else %}
+			    <div class="author-image-placeholder">{{ author.data.name | getInitials }}</div>
+			  {% endif %}
+			</div>
       <div class="author-info">
         <h2>
           <a href="/authors/{{ author.data.name | customSlugify }}/">{{ author.data.name }}</a>
