@@ -1,0 +1,158 @@
+/* Define colors for dark and light in principle */
+:root {
+	--brand-color-light: var(--wa-color-red-40);
+	--brand-color-dark: var(--wa-color-green-60);
+	--brand-color: var(--brand-color-light);
+}
+
+.wa-dark {
+	--brand-color: var(--brand-color-dark);
+}
+
+/* Use the brand color for the link colors. */
+a {
+	color: var(--brand-color);
+}
+
+a:visited {
+	color: var(--brand-color);
+}
+
+a:hover,
+a:focus {
+	color: color-mix(in srgb, var(--brand-color) 70%, black);
+}
+
+/* Style buttons with brand color. That is the toggle button for dark/light, and does not work. */
+wa-button.wa-filled {
+	background-color: var(--brand-color);
+	color: white;
+}
+
+wa-button.wa-filled:hover,
+wa-button.wa-filled:focus {
+	background-color: color-mix(in srgb, var(--brand-color) 80%, black);
+}
+
+/* Position the darkLight button to top right all the time. */
+#darkLight {
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	z-index: 1000;
+}
+
+/* Not sure where that belongs to. button-group-toolbar is not used at all. */
+main {
+	margin: 2em;
+	margin-left: 4em;
+	margin-right: 4em;
+}
+
+.header-anchor {
+	display: none;
+}
+
+/** Define anew the the authors list as grid of cards. Perhaps we could use instead the features of
+	WebAwesome here, which would eliminate part of the definitions then, and allow us styling, ... anyway.
+	Will be a separate project at some point in time. */
+.authors-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+	gap: 1.5rem;
+	margin-top: 1rem;
+}
+
+.author-image {
+	overflow: hidden;
+	margin-bottom: 1rem;
+}
+
+.author-image-small {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+.author-image-large {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%; /* Changed to 50% to make it circular */
+}
+
+.author-image-placeholder {
+	width: 100%;
+	height: 100%;
+	background-color: var(--wa-color-gray-20);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 2rem;
+	font-weight: bold;
+	color: var(--wa-color-gray-60);
+}
+
+/* Author name layout */
+/* Add these new styles */
+.wa-grid.authors {
+	--min-column-size: 20rem; /* This matches the inline style in your HTML */
+}
+
+wa-card.card-overview {
+	width: 100%; /* Make sure the card takes full width of its grid cell */
+}
+
+wa-flank {
+	display: flex;
+	align-items: center;
+}
+
+.author-name-container {
+	min-width: 0; /* This is crucial for text wrapping */
+	flex: 1;
+	padding-left: 1rem; /* Add some space between the image and the name */
+}
+
+.author-name {
+	display: block;
+	font-size: 180%;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	white-space: normal;
+	hyphens: auto; /* This allows the browser to insert hyphens for very long words */
+	max-width: 100%; /* Ensures the text doesn't overflow the container */
+}
+
+/* Some definitions about headings in different contexts. */
+/* TODO: Define some variables, to have better options to manage it in the future XOR use WebAwesome variables for it. */
+.postlist-item h2,
+.book-excerpt h2,
+.post-content h2 {
+	font-size: 1.5em;
+	margin-bottom: 0.3em;
+}
+
+.postlist-item .post-content h2 {
+	font-size: 1.5em;
+}
+
+.postlist-item .post-content {
+	font-size: 1.5em;
+}
+
+.postlist-item-header {
+	font-size: 2em;
+}
+
+.postlist-item,
+.post-content {
+	font-size: 1.5em;
+}
+
+/* Ensures that cover is small enough to be usable on mobile phone in portrait mode. Not the best solution ... */
+.post-cover,
+.book-cover {
+	width: 20%;
+	max-width: 200px;
+	margin-top: 1em;
+}

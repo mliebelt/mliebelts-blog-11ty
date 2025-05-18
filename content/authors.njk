@@ -9,24 +9,25 @@ eleventyNavigation:
 
 <h1>All Authors</h1>
 
-<div class="authors-grid">
+<div class="wa-grid authors"  style="--min-column-size: 20rem;">
   {% set sortedAuthors = collections.authors | sort(attribute='data.name') %}
   {% for author in sortedAuthors %}
     {% set authorBooks = collections.posts | byAuthor(author.data.name) %}
-    <div class="author-card">
-      <div class="author-image author-image-small">
-			  {% if author.data.image %}
-			    <div class="image-container">
-			      {% image "authors/" + author.data.image, author.data.name, "100px" %}
-			    </div>
-			  {% else %}
-			    <div class="author-image-placeholder">{{ author.data.name | getInitials }}</div>
-			  {% endif %}
-			</div>
+    <wa-card class="card-overview" size="large" appearance="filled">
+    	<wa-flank>
+	      <div class="author-image author-image-small">
+				  {% if author.data.image %}
+				    {% image "authors/" + author.data.image, author.data.name, "100px" %}
+				  {% else %}
+				    <div class="author-image-placeholder">{{ author.data.name | getInitials }}</div>
+				  {% endif %}
+				</div>
+				 <div class="wa-flank:end author-name-container">
+      <a href="/authors/{{ author.data.name | customSlugify }}/" class="author-name">{{ author.data.name }}</a>
+    </div>
+      </wa-flank>
       <div class="author-info">
-        <h2>
-          <a href="/authors/{{ author.data.name | customSlugify }}/">{{ author.data.name }}</a>
-        </h2>
+
         {% if author.data.tagline %}
           <p class="author-tagline">{{ author.data.tagline }}</p>
         {% endif %}
@@ -46,6 +47,6 @@ eleventyNavigation:
           <a href="/authors/{{ author.data.name | customSlugify }}/" class="view-all">View all books</a>
         {% endif %}
       </div>
-    </div>
+    </wa-card>
   {% endfor %}
 </div>

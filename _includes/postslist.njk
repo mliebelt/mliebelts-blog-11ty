@@ -1,7 +1,7 @@
-<div class="postlist wa-stack"  class=".wa-gap-xxl">
+<div class="postlist wa-stack"  class=".wa-gap-xxl" size="large">
 	{% for post in postslist | reverse %}
 	<div class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
-		<div class="postlist-item-header">
+		<div class="postlist-item-header wa-size-l">
 			{% if post.data.author %}
 			  <a href="/authors/{{ post.data.author | customSlugify }}/">{{ post.data.author }}</a>
 			{% endif %}:
@@ -12,11 +12,11 @@
 			{% if post.data.cover %}
 			<div>
 				<a href="{{ post.url }}">
-					{% image 'blog/books' + post.data.path + '/' + post.data.cover, post.data.title, "80px" %}
+					{% image 'blog/books' + post.data.path + '/' + post.data.cover, post.data.title, "120px" %}
 				</a>
 			</div>
 			{% endif %}
-			<div>
+			<div class="wa-size-l">
 				{{ post.templateContent | excerpt | safe }}
 			</div>
 		</div>
