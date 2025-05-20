@@ -3,10 +3,14 @@
 	--brand-color-light: var(--wa-color-red-40);
 	--brand-color-dark: var(--wa-color-green-60);
 	--brand-color: var(--brand-color-light);
+	--highlight-color-bg: var(--wa-color-gray-20);
+	--highlight-color-fg: var(--wa-color-gray-60);
 }
 
 .wa-dark {
 	--brand-color: var(--brand-color-dark);
+	--highlight-color-bg: var(--wa-color-gray-80);
+	--highlight-color-fg: var(--wa-color-gray-40);
 }
 
 /* Use the brand color for the link colors. */
@@ -83,13 +87,13 @@ main {
 .author-image-placeholder {
 	width: 100%;
 	height: 100%;
-	background-color: var(--wa-color-gray-20);
+	background-color: var(--highlight-color-bg);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	font-size: 2rem;
 	font-weight: bold;
-	color: var(--wa-color-gray-60);
+	color: var(--highlight-color-fg);
 }
 
 /* Author name layout */
