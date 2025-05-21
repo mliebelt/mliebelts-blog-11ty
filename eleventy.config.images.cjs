@@ -19,7 +19,7 @@ function isFullUrl(url) {
 
 module.exports = function (eleventyConfig) {
 	// Copy image files
-	eleventyConfig.addPassthroughCopy("blog/books/**/*.(jpg|png|webp)");
+	eleventyConfig.addPassthroughCopy("books/**/*.(jpg|png|webp)");
 	// Eleventy Image shortcode
 	// https://www.11ty.dev/docs/plugins/image/
 	eleventyConfig.addAsyncShortcode("image", async function imageShortcode(src, alt, widths, sizes) {

@@ -231,7 +231,7 @@ module.exports = function (eleventyConfig) {
 	});
 
 	eleventyConfig.addCollection("posts", function (collection) {
-		return collection.getFilteredByGlob("content/blog/books/**/*.md");
+		return collection.getFilteredByGlob("content/books/**/*.md");
 	});
 
 	eleventyConfig.addCollection("authors", function (collectionApi) {
@@ -239,7 +239,7 @@ module.exports = function (eleventyConfig) {
 	});
 
 	eleventyConfig.addCollection("debugPosts", function (collectionApi) {
-		const posts = collectionApi.getFilteredByGlob("content/blog/books/**/*.md");
+		const posts = collectionApi.getFilteredByGlob("content/books/**/*.md");
 		console.log("\nDEBUG - Book authors:");
 		posts.forEach((post) => {
 			console.log(`  "${post.data.title}" by "${post.data.author}"`);
