@@ -33,9 +33,13 @@ wa-button.wa-filled {
 	color: white;
 }
 
+.header-buttons wa-button {
+	font-size: 150%;
+}
+
 wa-button.wa-filled:hover,
 wa-button.wa-filled:focus {
-	background-color: color-mix(in srgb, var(--brand-color) 80%, black);
+	background-color: color-mix(in srgb, var(--brand-color) 10%, black);
 }
 
 /* Position the darkLight button to top right all the time. */
@@ -150,7 +154,7 @@ wa-flank {
 
 .postlist-item,
 .post-content {
-	font-size: 1.5em;
+	font-size: 1.2em;
 }
 
 /* Ensures that cover is small enough to be usable on mobile phone in portrait mode. Not the best solution ... */

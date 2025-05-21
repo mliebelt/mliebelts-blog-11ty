@@ -9,7 +9,7 @@ author: "Michael J. Sullivan"
 cover: "./kronturm.png"
 isbn: "9783608115956"
 tags:
-  - "phantasy"
+  - "fantasy"
 
 ---
 ## Was für ein Debüt!

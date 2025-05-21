@@ -8,7 +8,7 @@ author: "Nena Tramountani"
 cover: "./erde.png"
 isbn: "9783841231659"
 tags:
-  - "fanatasy"
+  - "fantasy"
 layout: layouts/post.njk
 
 ---

@@ -58,16 +58,16 @@
 	<body>
 	<!--	<a href="#skip" class="visually-hidden">Skip to main content</a> -->
 
-<wa-button id="darkLight" size="medium" pill class="wa-filled" onclick="toggleTheme()">
+<wa-button id="darkLight" size="large" pill class="wa-filled" onclick="toggleTheme()">
     <wa-icon name="moon" class="wa-dark-only"></wa-icon>
     <wa-icon name="sun" class="wa-light-only"></wa-icon>
 </wa-button>
 
 <header>
     <div class="wa-flank">
-        <wa-button-group label="Navigation">
+        <wa-button-group label="Navigation" class="header-buttons">
             {%- for entry in collections.all | eleventyNavigation %}
-                <wa-button size="medium" pill class="wa-filled" href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</wa-button>
+                <wa-button pill class="wa-filled" href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</wa-button>
             {%- endfor %}
         </wa-button-group>
     </div>
