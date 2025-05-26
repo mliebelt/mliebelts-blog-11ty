@@ -14,7 +14,7 @@ layout: layouts/base.njk
 	  {% endif %}
 	</div>
 	<div class="post-content">
-	{{ content | safe }}
+		{{ content | safe }}
 
 		<div class="post-metadata wa-gap-l">
 			<div><time datetime="{{ page.date | htmlDateString }}">{{ page.date | germanDate }}</time></div>

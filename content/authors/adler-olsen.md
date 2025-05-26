@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Adler Olsen
-image: Jussi_Adler-Olsen.jpg
+image: adler-olsen.jpg
 # email: optional@example.com
 website: https://jussiadlerolsen.com/
 ---

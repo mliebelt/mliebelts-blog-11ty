@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Alexander Hartung
+image: Alexander_Hartung.jpg
 # email: optional@example.com
 # website: https://optional-website.com
 ---

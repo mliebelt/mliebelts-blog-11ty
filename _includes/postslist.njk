@@ -1,13 +1,7 @@
 <div class="postlist wa-stack"  class=".wa-gap-xxl" size="large">
 	{% for post in postslist | reverse %}
-	<div class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
-		<div class="postlist-item-header wa-size-l">
-			{% if post.data.author %}
-			  <a href="/authors/{{ post.data.author | customSlugify }}/">{{ post.data.author }}</a>
-			{% endif %}:
-			<a href="{{ post.url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
-			<span style="white-space: nowrap;">(&nbsp;<time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | germanDate }}</time>&nbsp;)</span>
-		</div>
+	<div class="wa-flank postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
+
 		<div class="wa-flank wa-gap-xs wa-align-items-start">
 			{% if post.data.cover %}
 			<div>
@@ -16,10 +10,17 @@
 				</a>
 			</div>
 			{% endif %}
-			<div class="wa-size-l">
+		<div class="postlist-item-header" style="width: 300px">
+			{% if post.data.author %}
+			  <a href="/authors/{{ post.data.author | customSlugify }}/">{{ post.data.author }}</a>
+			{% endif %}:
+			<a href="{{ post.url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
+			<span class="read-date" style="white-space: nowrap;">(&nbsp;<time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | germanDate }}</time>&nbsp;)</span>
+		</div>
+		</div>
+					<div class="wa-size-l">
 				{{ post.templateContent | excerpt | safe }}
 			</div>
-		</div>
 	</div>
 	{% endfor %}
 </div>

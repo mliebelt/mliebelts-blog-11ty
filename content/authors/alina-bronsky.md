@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Alina Bronsky
-image: alina-bronsky.png
+image: alina-bronsky.jpg
 # email: optional@example.com
 # website: https://optional-website.com
 ---
