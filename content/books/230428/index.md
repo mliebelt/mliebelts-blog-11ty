@@ -5,7 +5,7 @@ layout: layouts/post.njk
 path: "/230428"
 category: "Category"
 posttype: "book"
-author: "Adler Olsen"
+author: "Jussi Adler-Olsen"
 cover: "./schaendung.png"
 isbn: "9783423415590"
 tags:

@@ -5,7 +5,7 @@ layout: layouts/post.njk
 path: "/230401"
 category: "Category"
 posttype: "book"
-author: "Adler Olsen"
+author: "Jussi Adler-Olsen"
 cover: "./erbarmen.png"
 isbn: "978-3-423-21262-5"
 tags:

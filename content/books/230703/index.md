@@ -5,7 +5,7 @@ layout: layouts/post.njk
 path: "/230703"
 category: "Category"
 posttype: "book"
-author: "Adler Olsen"
+author: "Jussi Adler-Olsen"
 cover: "./erloesung.jpg"
 isbn: "9783423407960"
 tags:

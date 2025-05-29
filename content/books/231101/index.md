@@ -5,7 +5,7 @@ layout: layouts/post.njk
 path: "/231101"
 category: "Category"
 posttype: "book"
-author: "Adler Olsen"
+author: "Jussi Adler-Olsen"
 cover: "./verachtung.jpg"
 isbn: "9783423413183"
 tags:

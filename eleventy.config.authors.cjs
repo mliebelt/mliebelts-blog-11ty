@@ -22,7 +22,7 @@ module.exports = function (eleventyConfig) {
 		}
 
 		// Get all book files
-		const booksGlob = path.join(__dirname, "content/blog/books/**/*.md");
+		const booksGlob = path.join(__dirname, "content/books/**/*.md");
 		const bookFiles = require("glob").sync(booksGlob);
 
 		// Extract authors from book files
