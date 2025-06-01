@@ -5,7 +5,7 @@ layout: layouts/post.njk
 path: "/141101"
 category: "Category"
 posttype: "book"
-author: "Amdreas Eschbach"
+author: "Andreas Eschbach"
 cover: "./haarteppich.png"
 isbn: "978-3404206971"
 tags:
