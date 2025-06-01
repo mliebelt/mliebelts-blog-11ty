@@ -1,6 +1,5 @@
 const { DateTime } = require("luxon");
 const markdownItAnchor = require("markdown-it-anchor");
-const Image = require("@11ty/eleventy-img");
 const slugify = require("slugify");
 
 const pluginRss = require("@11ty/eleventy-plugin-rss");
@@ -8,30 +7,39 @@ const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginBundle = require("@11ty/eleventy-plugin-bundle");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
+// const { EleventyWaybackMachinePlugin } = require("@11ty/eleventy-plugin-wayback-machine");
 
 const pluginDrafts = require("./eleventy.config.drafts.cjs");
 const pluginImages = require("./eleventy.config.images.cjs");
 const pluginAuthors = require("./eleventy.config.authors.cjs");
-const util = require("util");
-
-async function imageShortcode(src, alt, sizes) {
-	let metadata = await Image(src, {
-		widths: [300, 600],
-		formats: ["avif", "jpeg"],
-	});
-
-	let imageAttributes = {
-		alt,
-		sizes,
-		loading: "lazy",
-		decoding: "async",
-	};
-
-	return Image.generateHTML(metadata, imageAttributes);
-}
 
 /** @param {import('@11ty/eleventy').UserConfig} eleventyConfig */
 module.exports = function (eleventyConfig) {
+	// Add new excerpt filter
+	eleventyConfig.addFilter("excerpt", (content) => {
+		if (!content) return "";
+		// Preserve h1-h6 tags
+		let excerpt = content.replace(/<(?!\/?h[1-6])[^>]+>/g, '');
+		excerpt = excerpt.split(' ').slice(0, 50).join(' ');
+		return excerpt + '...';
+	});
+
+	async function imageShortcode(src, alt, sizes) {
+		let metadata = await Image(src, {
+			widths: [300, 600],
+			formats: ["avif", "jpeg"],
+		});
+
+		let imageAttributes = {
+			alt,
+			sizes,
+			loading: "lazy",
+			decoding: "async",
+		};
+
+		return Image.generateHTML(metadata, imageAttributes);
+	}
+
 	// Add image shortcode
 	eleventyConfig.addAsyncShortcode("image", imageShortcode);
 	eleventyConfig.addPlugin(pluginAuthors);
@@ -86,6 +94,7 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPlugin(pluginNavigation);
 	eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 	eleventyConfig.addPlugin(pluginBundle);
+	// Remove or comment out any usage of EleventyWaybackMachinePlugin if it exists
 
 	// Filters
 	eleventyConfig.addFilter("germanDate", (dateObj) => {
@@ -118,14 +127,27 @@ module.exports = function (eleventyConfig) {
 			.join("");
 	});
 
-	eleventyConfig.addFilter("customSlugify", function(str) {
+	eleventyConfig.addFilter("customSlugify", function (str) {
 		return slugify(str, {
-			replacement: '-',
+			replacement: "-",
 			remove: /[*+~.()'"!:@]/g,
 			lower: true,
-			strict: true
+			strict: true,
 		});
 	});
+
+	// Add a global slugify function for use in templates
+		eleventyConfig.addGlobalData("slugify", function(str) {
+			if (typeof str !== 'string') {
+				return '';
+			}
+			return slugify(str, {
+				replacement: "-",
+				remove: /[*+~.()'"!:@]/g,
+				lower: true,
+				strict: true,
+			});
+		});
 
 	// Get the first `n` elements of a collection.
 	eleventyConfig.addFilter("head", (array, n) => {
@@ -162,12 +184,7 @@ module.exports = function (eleventyConfig) {
 		return arr.slice(0, limit);
 	});
 
-	// To be used for showing an overview
-	eleventyConfig.addFilter("excerpt", (content) => {
-		const excerptLength = 400; // Adjust this to your preferred length
-		if (!content || content.length <= excerptLength) return content;
-		return content.substr(0, content.lastIndexOf(" ", excerptLength)) + "...";
-	});
+	// Excerpt filter is already defined at the top of the function
 
 	eleventyConfig.addFilter("filter", function (array, property, value) {
 		return Array.isArray(array)
@@ -215,12 +232,7 @@ module.exports = function (eleventyConfig) {
 	// Customize Markdown library settings:
 	eleventyConfig.amendLibrary("md", (mdLib) => {
 		mdLib.use(markdownItAnchor, {
-			permalink: markdownItAnchor.permalink.ariaHidden({
-				placement: "after",
-				class: "header-anchor",
-				symbol: "#",
-				ariaHidden: false,
-			}),
+			permalink: false,
 			level: [1, 2, 3, 4],
 			slugify: eleventyConfig.getFilter("customSlugify"),
 		});

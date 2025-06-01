@@ -9,6 +9,7 @@ author: "Sally Green"
 cover: "./half-bad.png"
 tags:
   - "fantasy"
+reread: []
 ---
 
 # Das Dunkle in mir

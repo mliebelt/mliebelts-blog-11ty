@@ -1,3 +1,5 @@
+@import 'postlist.css';
+
 /* Define colors for dark and light in principle */
 :root {
 	--brand-color-light: var(--wa-color-red-40);
@@ -149,6 +151,7 @@ wa-flank {
 }
 
 .postlist-item-header {
+	width: 300px;
 	font-size: 1.5em;
 }
 
@@ -156,6 +159,8 @@ wa-flank {
 .post-content {
 	font-size: 1.2em;
 }
+
+/* Styles for postlist are now in a separate file: postlist.css */
 
 /* Ensures that cover is small enough to be usable on mobile phone in portrait mode. Not the best solution ... */
 .post-cover,
