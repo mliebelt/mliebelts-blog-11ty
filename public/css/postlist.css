@@ -17,6 +17,7 @@
 .postlist-item-header {
 	padding-left: 20px;
 	font-size: 1.5em;
+	align-self: baseline;
 }
 
 .postlist-link {
@@ -26,6 +27,11 @@
 
 .postlist-item-content {
 	min-inline-size: var(--content-percentage, 30%) !important;
+	align-self: baseline;
+}
+
+.postlist-item-content h2 {
+	margin-top: 0%;
 }
 
 .read-date {
