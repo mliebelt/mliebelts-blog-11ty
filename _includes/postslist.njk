@@ -9,7 +9,7 @@
 				</a>
 			</div>
 			{% endif %}
-			<div class="postlist-item-header">
+			<div class="postlist-item-header wa-stack">
 				{% if post.data.author %}
 				<a href="/authors/{{ post.data.author | customSlugify }}/">{{ post.data.author }}</a>
 				{% endif %}
@@ -19,7 +19,7 @@
 				</span>
 			</div>
 		</div>
-		<div class="wa-size-l">
+		<div class="postlist-item-content wa-size-l">
 			{{ post.templateContent | excerpt | safe }}
 		</div>
 	</div>

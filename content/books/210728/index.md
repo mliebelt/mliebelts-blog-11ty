@@ -1,5 +1,5 @@
 ---
-title: "Die Gilde der schwarzen Margie - die Novizin"
+title: "Die Gilde der schwarzen Magier - die Novizin"
 date: "2021-07-28"
 layout: layouts/post.njk
 path: "/210728"

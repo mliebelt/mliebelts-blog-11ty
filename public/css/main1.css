@@ -1,4 +1,4 @@
-@import 'postlist.css';
+@import "postlist.css";
 
 /* Define colors for dark and light in principle */
 :root {
@@ -133,7 +133,6 @@ wa-flank {
 	max-width: 100%; /* Ensures the text doesn't overflow the container */
 }
 
-/* Some definitions about headings in different contexts. */
 /* TODO: Define some variables, to have better options to manage it in the future XOR use WebAwesome variables for it. */
 .postlist-item h2,
 .book-excerpt h2,
@@ -147,11 +146,6 @@ wa-flank {
 }
 
 .postlist-item .post-content {
-	font-size: 1.5em;
-}
-
-.postlist-item-header {
-	width: 300px;
 	font-size: 1.5em;
 }
 
