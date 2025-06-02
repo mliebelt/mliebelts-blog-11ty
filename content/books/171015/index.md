@@ -13,7 +13,7 @@ tags:
   - "reihe"
 ---
 
-# Start der Klingensaga
+## Start der Klingensaga
 
 Auch eine Empfehlung, und keine schlechte. Den Start bildet die Geschichte um "9-Finger-Logen", oder auch den blutigen Neuner genannt. Viele weitere schön gezeichnete Charaktere mit unterschiedlichsten Zielen treffen sich im Rahmen der parallel erzählten 3-4 Geschichten. Zu Beginn ist das etwas anstrengend, man wird aber schnell warm mit allen, und es gibt keine nur Guten oder nur Böse Spieler in der Geschichte.
 

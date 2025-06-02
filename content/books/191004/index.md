@@ -12,7 +12,7 @@ tags:
   - "sf"
 ---
 
-# Die Menschheit in 150 Jahren
+## Die Menschheit in 150 Jahren
 
 Am Anfang habe ich mich ein wenig schwergetan. Es wimmelt nur so von Figuren, und man braucht einige Seiten, um reinzukommen. Aber dann ergibt sich der Plot, der die Geschichte dann über 550 Seiten trägt. Die Menschheit driftet auseinander, und eine Fraktion sind die Walkaways. Die wollen mit dem Default nichts mehr am Hut haben, und gründen immer wieder neue Gemeinden weit außerhalb. Alles kann gedruckt werden (Essen, Kleider, Maschinen, ...), und die Menschheit muss eigentlich nicht mehr Hunger leiden.
 

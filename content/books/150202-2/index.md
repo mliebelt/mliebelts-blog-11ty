@@ -11,7 +11,7 @@ isbn: "978-3800095537"
 tags:
   - "fantasy"
 ---
-# Welt aus Staub
+## Welt aus Staub
 
 Interessante Konstellation: Die Welt ist praktisch tot, das Leben konzentriert sich in 10 Megastädte, alles
 Essbare wird gezüchtet und prodziert. Grund ist eine Spore, die alles Leben in Stunden vernichtet. So entsteht

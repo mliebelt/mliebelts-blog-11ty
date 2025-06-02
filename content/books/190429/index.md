@@ -12,7 +12,7 @@ tags:
   - "fantasy"
 ---
 
-# Was für ein Schmöker
+## Was für ein Schmöker
 
 Mich hat schier der Schlag getroffen, als ich das eBook auf meinem Reader das erste Mal geöffnet hatte: nahezu 1100 Seiten, was ist denn das? Ich hatte keine Vorstellung mehr, was mich hier erwartet, und hatte die ersten 50 Seiten oder so noch nicht mehr. Aber nach und nach entblättert sich die Story, und man merkt, dass der Autor sich hier sehr viel vorgenommen hat. Es gibt (mindestens) die folgenden Handlungsstränge.
 

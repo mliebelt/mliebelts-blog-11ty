@@ -12,7 +12,7 @@ tags:
   - "roman"
 ---
 
-# Nicht zu vergleichen
+## Nicht zu vergleichen
 
 ... mit dem Erstling von Frau Hegemann, den ich durchaus genossen hatte. Ohne Ferien hätte ich das Buch zur Seite gelegt, aber wenn man Zeit hat, und einige Stunden am Stück darin versinken kann, dann erschließt sich der schräge Reiz mancher Seiten oder Kapitel.
 

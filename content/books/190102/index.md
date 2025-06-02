@@ -13,7 +13,7 @@ tags:
   - "reihe"
 ---
 
-# Ein Schnäppchen von Amazon
+## Ein Schnäppchen von Amazon
 
 ... war das Buch (1€ glaube ich). Von daher einfach mal versucht, und was dabei gelernt.
 

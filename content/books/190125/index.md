@@ -13,7 +13,7 @@ tags:
   - "reihe"
 ---
 
-# Schöner Einstieg in eine neue Reihe
+## Schöner Einstieg in eine neue Reihe
 
 Das Buch war wohl auch eine Empfehlung von ich weiß nicht mehr, meine Erwartungen waren nicht allzugroß. Aber die Geschichte zieht einen in den Bann. Es sind einige wenige Grund-Essenzen, die die Geschichte ausmachen.
 

@@ -12,7 +12,7 @@ tags:
   - "fantasy"
 ---
 
-# Erstling von Andreas Eschbach
+## Erstling von Andreas Eschbach
 
 Wunderschöne, verschachtelte Geschichte, die ohne eigentliche Hauptperson auskommt. Jedes Kapitel erzählt eine eigene Geschichte, und alle zusammen erst ergeben -- ja was -- die eigentliche Geschichte? Haarteppichknüpfer bekommen von ihren Vätern (alles Haarteppichknüpfer) viel Geld als Ausstattung. Damit kaufen sie dann während ihres gesamten Lebens alles, was sie und ihre Familien benötigen, um sich um ihren eigentlichen Lebenszweck kümmern zu können: das Knüpfen eines einzigen Haarteppichs. Dieser wird dann am Ende verkauft, und der einzige Sohn bekommt damit die Ausstattung für sein Leben.
 

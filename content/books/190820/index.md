@@ -13,7 +13,7 @@ tags:
   - "fantasy"
 ---
 
-# Interessantes Setup
+## Interessantes Setup
 
 Miles ist Arzt und auf der Flucht vor seiner Vergangenheit. Es stellt sich heraus, dass er eine besondere Begabung hat, indem er sich in seine Patienten nicht nur einfühlen kann, und ihre Krankheit "sieht", sondern dass er sie auch direkt heilen kann. Er muss nur vorsichtig sein, dass seine "Hexen"-Kraft nicht für andere sichtbar wird.
 

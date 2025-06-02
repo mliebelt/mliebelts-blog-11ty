@@ -12,7 +12,7 @@ tags:
   - "krimi"
   - "reihe"
 ---
-# Krimi mit Bezug zu Jack the Ripper
+## Krimi mit Bezug zu Jack the Ripper
 
 Verstörende Geschichte um die junge Polizeibeamte Lacey Flint, als eines Tages immer wieder Frauen ermordet werden, und zwar auf eine Art und Weise, die stark an Jack the Ripper erinnern. Absicht, Zufall, Prinzip? Die Story wird immer dichter, verstörender, bis sich am Ende dann alles auf den Kopf stellt. Wunderschön, klasse erzählt, Ende wird nicht verraten.
 

@@ -12,7 +12,7 @@ tags:
   - "fantasy"
 ---
 
-# Weiter Wächter ...
+## Weiter Wächter ...
 
 Die Grundidee bleibt die Gleiche: Wieder 3 voneinander unabhängige Geschichten, diesmal aber aus der
 Perspektive der Dunklen erzählt. Dabei hat mich die erste Geschichte, die Erholung der dunklen Hexe im

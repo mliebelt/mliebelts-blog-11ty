@@ -13,7 +13,7 @@ tags:
   - "reihe"
 ---
 
-# Fantasy at its best
+## Fantasy at its best
 
 Eigentlich 3 Bücher (bisher), die sich auf nur zwei Tage erstrecken. Das Ganze aber ein Kunststück des Erzählers.
 Aber zuerst einmal zurück zum Start: Kote ist Gastwirt in einem kleinen Flecken, und kümmert sich um seine Gäste.

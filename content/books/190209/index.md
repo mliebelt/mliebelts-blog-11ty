@@ -13,7 +13,7 @@ tags:
   - "reihe"
 ---
 
-# Raumschiffe, schräge Typen, ...
+## Raumschiffe, schräge Typen, ...
 
 Was will man mehr. Das Buch war auf einer Auswahlliste eines Fantasy-Preises für 2018, und damit auf jeden Fall eine Empfehlung. Und natürlich habe ich Kai Meyer als Autor schon oft wahrgenommen, aber wundersamerweise noch nichts von ihm gelesen (was sich nun wohl ändern wird).
 

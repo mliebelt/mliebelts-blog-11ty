@@ -13,7 +13,7 @@ tags:
   - "reihe"
 ---
 
-# Schauriger Krimi
+## Schauriger Krimi
 
 Auch das Buch war ein Schnäppchen bei Amazon, und lag eine ganze Zeit in meiner Bibliothek. Als ich dann begonnen hatte, konnte ich es nicht mehr weglesen, und habe es (für meine Verhältnisse) zügig gelesen.
 

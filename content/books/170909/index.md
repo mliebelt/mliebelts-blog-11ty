@@ -13,7 +13,7 @@ tags:
   - "reihe"
 ---
 
-# Start einer vielbändigen Saga
+## Start einer vielbändigen Saga
 
 Ich hatte irgendwo die Empfehlung gelesen, was man in der Fantasy heute lesen müsse, und hatte mich dann entschlossen, einige Bände unserer Bibliothek zu spenden. Die Bücher kamen dann einige Zeit später, und also machte ich mich auf, die Saga anzugehen.
 

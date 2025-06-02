@@ -133,27 +133,6 @@ wa-flank {
 	max-width: 100%; /* Ensures the text doesn't overflow the container */
 }
 
-/* TODO: Define some variables, to have better options to manage it in the future XOR use WebAwesome variables for it. */
-.postlist-item h2,
-.book-excerpt h2,
-.post-content h2 {
-	font-size: 1.5em;
-	margin-bottom: 0.3em;
-}
-
-.postlist-item .post-content h2 {
-	font-size: 1.5em;
-}
-
-.postlist-item .post-content {
-	font-size: 1.5em;
-}
-
-.postlist-item,
-.post-content {
-	font-size: 1.2em;
-}
-
 /* Styles for postlist are now in a separate file: postlist.css */
 
 /* Ensures that cover is small enough to be usable on mobile phone in portrait mode. Not the best solution ... */

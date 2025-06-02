@@ -12,7 +12,7 @@ tags:
   - "roman"
 ---
 
-# Wie schräg kann ein Buch sein?
+## Wie schräg kann ein Buch sein?
 
 Eines der wenigen Bücher, das ich nach der Hälfe weggelegt habe. Aber es war mir einfach zu schräg. Es hat mich immer wieder an Kafka erinnert, die Hoffnungslosigkeit, die Schleifen, so gar kein Fortschritt. Aber wenn man mal 80 Seiten gelesen hat, wie jemand Leichen (viele, viele Leichen) in einem Hotel 3 Stockwerke hinuntertransportiert hat, und es ist weit und breit kein Hintergrund, keine Story, und auch gar kein Grund erkennbar, da reicht es dann irgendwann.
 

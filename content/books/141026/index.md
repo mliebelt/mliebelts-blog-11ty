@@ -12,7 +12,7 @@ tags:
   - "krimi"
   - "roman"
 ---
-# Routinierter Krimi
+## Routinierter Krimi
 
 Routiniert erzählter Krimi mit verschiedenen Zeitebenen (hat eine Weile
 gebraucht, bis ich die Jahreszahlen vor und zurück verstanden habe). Es geht um einen Doppelmord an

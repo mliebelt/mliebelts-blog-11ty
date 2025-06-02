@@ -12,7 +12,7 @@ tags:
   - "sachbuch"
 ---
 
-# Der Titel spricht für sich
+## Der Titel spricht für sich
 
 Wer mal in einer großen Firma oder Behörde gearbeitet hat, der kennt sie: die Bullshit Jobs, auf die man problemlos verzichten könnte, die aber wie Pilze im Herbst aus dem Boden sprießen. Amüsant zu lesen (zu Beginn), hatte aber dann Längen und Wiederholungen. Der Grundthese habe ich gerne zugestimmt, und einige der Beispiele sind wirklich nett zu lesen.
 

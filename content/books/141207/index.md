@@ -12,7 +12,7 @@ tags:
   - "roman"
 ---
 
-# Faszinierende nicht-so-nerd Geschichte
+## Faszinierende nicht-so-nerd Geschichte
 
 Schon lange nicht mehr mit so viel Genuß (und in der Geschwindigkeit, 2 Tage) ein Buch gelesen. Das Buch stand schon lange auf der "zu lesen"-Liste, und war dann in der Bücherei verfügbar.
 

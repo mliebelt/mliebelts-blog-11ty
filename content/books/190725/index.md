@@ -13,7 +13,7 @@ tags:
   - 'reihe'
 ---
 
-# Nicht das erste Buch
+## Nicht das erste Buch
 
 ... von Peter Brett, das ich gelesen habe, aber definitiv nicht das letzte in der Reihe (auch wenn einige Versatzstücke einem bekannt vorkommen). Die Grundidee ist jedoch brilliant: Jede Nacht kommen Dämonen an die Oberfläche, und die Menschen müssen sich in ihren geschützten Häusern verstecken. Der einzige Schutz sind sogenannte Runen, von denen es viele hundert gibt. Doch wehe, wenn eine der Runen verletzt ist, dann dringen die Dämonen auch in die Häuser ein, und es gibt keine Rettung.
 

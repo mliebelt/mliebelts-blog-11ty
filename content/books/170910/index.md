@@ -13,7 +13,7 @@ tags:
   - "reihe"
 ---
 
-# Nach den Klingen ...
+## Nach den Klingen ...
 
 Nach den Klingenromanen, die schon extrem erfolgreich waren, eine neue Trilogie von Joe Abercrombie. Ich hatte die zuerst gelesen, da die Klingen-Romane noch nicht geliefert waren, und war sehr angenehm überrascht. Am Ende etwas sanfter als diese, aber mit sehr interessanten, facettenreichen Charakteren.
 

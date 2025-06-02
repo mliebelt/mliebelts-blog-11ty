@@ -12,7 +12,7 @@ tags:
   - "roman"
 ---
 
-# Traurig schön
+## Traurig schön
 
 Aufgrund einer Empfehlung ausgeliehen, und es nicht bereut. Worum geht es? Katrina ist 18, auf der Walz und wirklich nicht gut drauf. So nach und nach lernt man sie kennen, aber warum schützt sie ihr Gesicht immer mit einem Tuch? In Rückblenden wird viel über ihre Kindheit in Hyde erzählt, als sie mit ihrer Schwester und ihrem Vater in der Wildnis lebte.
 

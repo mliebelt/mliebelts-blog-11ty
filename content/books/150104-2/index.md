@@ -12,7 +12,7 @@ tags:
   - "fantasy"
   - "reihe"
 ---
-# Wächter der Nacht
+## Wächter der Nacht
 
 Laut Eigenwerbung ein Kultbuch, und erfolgreicher als "Herr der Ringe" und "Harry Potter" (aber wohl in Russland).
 Viel Vorschusslorbeeren, von daher war ich gespannt, was mich hier erwartet. Die Konstellation ist die folgende:

@@ -12,7 +12,7 @@ tags:
   - "roman"
 ---
 
-# Wirtschaftskrimi mit New-Tech
+## Wirtschaftskrimi mit New-Tech
 
 Mal was anderes von Marzi, eine Art Wissenschaftskrimi mit einigen interessanten Aspekten in Richtung neue Medien.
 Michael Conway ist tot, getötet bei einem Verkehrsunfall, an dem Tag, an dem seine Firma ihr größtes Vorhaben

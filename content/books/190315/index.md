@@ -13,7 +13,7 @@ tags:
   - "reihe"
 ---
 
-# In einer fremden Parallelwelt
+## In einer fremden Parallelwelt
 
 Der Mensch hat die Erde fast ganz zerstört, und die Menschheit rappelt sich gerade mühsam wieder auf. In einer der Enklaven ist Cia kurz vor ihrem Abschluss und fiebert der Entscheidung entgegen, ob jemand von der Schule wohl für die Auslese vorgeschlagen wird. Sie (und noch drei andere) werden nach Jahren vorgeschlagen, und erst danach erfährt sie von ihrem Vater (der die Auslese vor vielen Jahren auch erfolgreich bestand) dass es vielleicht gar keine gute Idee ist ...
 

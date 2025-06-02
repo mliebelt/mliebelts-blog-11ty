@@ -12,7 +12,7 @@ tags:
 reread: []
 ---
 
-# Das Dunkle in mir
+## Das Dunkle in mir
 
 Sehr schön erzählte Geschichte um ein Kind, später Jugendlichen, der nicht versteht, warum er anders ist als andere. Von kleinen Gängeleien als Kind hin zu offensichtlichem Mobbing bis zu Schlägen, Gemeinheiten und Androhung von Schlimmerem.
 

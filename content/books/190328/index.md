@@ -12,7 +12,7 @@ tags:
   - "krimi"
 ---
 
-# Wie Titel täuschen können
+## Wie Titel täuschen können
 
 Ehrlicherweise habe ich mich vom Titel ansprechen lassen, was bis zum Ende nie auftauchte, war ein Schachbrett (auch kein übertragenes). Trotzdem eine interessant erzählte, komplexe Geschichte mit mehren Handlungssträngen, die gekonnt ineinander fließen.
 

@@ -13,7 +13,7 @@ tags:
   - "reihe"
 ---
 
-# Irgendwas neues unter der Sonne?
+## Irgendwas neues unter der Sonne?
 
 Ich hatte irrtümlich zuerst den Band 2 der Reihe ausgeliehen, das aber glücklicherweise schon nach wenigen Seiten lesens gemerkt, und mir dann den ersten Band geholt. Was soll man sagen?
 

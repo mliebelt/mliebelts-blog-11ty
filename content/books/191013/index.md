@@ -12,7 +12,7 @@ tags:
   - "sf"
 ---
 
-# Eine Kolonie auf dem Mars
+## Eine Kolonie auf dem Mars
 
 Nicht das erste Buch, das ich mit dem Ausgangspunkt gelesen habe, aber sicher eines der interessanteren. Es gibt eine Marskolonie, dort haben sich in 4 Flügeln die Amerikaner, die Sovjets, die Europäer und die Asiaten niedergelassen. Alle arbeiten zusammen, man versteht sich, hat regen Austausch ... aber das wäre kein Buch.
 

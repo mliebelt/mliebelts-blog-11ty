@@ -13,7 +13,7 @@ tags:
   - "reihe"
 ---
 
-# Routinierte Fortsetzung
+## Routinierte Fortsetzung
 
 ... der schon bekannten Reihe um Police Constable (PC) Peter Grant. Diesmal auf dem Lande als Unterstützung auf der Suche nach zwei verschwundenen Mädels. Peter Grant ist ein Zauberer, der in einer Sondereinheit für die Polizei unterwegs ist. Dabei bekommt er Kontakt mit allem, was in der Zauberwelt Rang und Namen hat.
 

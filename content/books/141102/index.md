@@ -13,7 +13,7 @@ tags:
   - "web"
 ---
 
-# A fresh approach to organizing CSS
+## A fresh approach to organizing CSS
 
 What a mouthful of a title! I heard about it in the Ruby Rogues session
 [Evaluating Yourself](http://devchat.tv/ruby-rogues/171-rr-evaluating-yourself)

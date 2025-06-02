@@ -14,7 +14,7 @@ tags:
   - "reihe"
 ---
 
-# Zweiter Teil der Bibliothekare
+## Zweiter Teil der Bibliothekare
 
 Schöne Fortführung der Reihe um die unsichtbare Bibliothek. Kai, der Assistent von Irene, ist entführt worden, und in ein Venedig verbracht worden, das mehr der chaotischen Seite zuneigt. Irene macht sich auf die Suche, und wird dabei überraschenderweise von Lord Silver, einem der führenden Elfen auf ihrem Planeten, unterstützt.
 
