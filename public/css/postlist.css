@@ -1,7 +1,11 @@
 .postlist {
 	display: flex;
 	flex-direction: column;
-	gap: 2rem;
+	gap: 0.5rem;
+}
+
+.postlist wa-divider {
+	margin: 10px 0;
 }
 
 .postlist-item {
