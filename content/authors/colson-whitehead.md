@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Colson Whitehead
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Colson
+surname: Whitehead
 ---
 No additional information is available for this author.

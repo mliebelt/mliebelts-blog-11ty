@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Wolfgang Hohlbein
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Wolfgang
+surname: Hohlbein
 ---
 No additional information is available for this author.

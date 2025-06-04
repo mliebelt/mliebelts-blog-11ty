@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Helene Hegemann
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Helene
+surname: Hegemann
 ---
 No additional information is available for this author.

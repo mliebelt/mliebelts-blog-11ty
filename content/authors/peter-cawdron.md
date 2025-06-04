@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Peter Cawdron
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Peter
+surname: Cawdron
 ---
 No additional information is available for this author.

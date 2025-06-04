@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Mela Nagel
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Mela
+surname: Nagel
 ---
 No additional information is available for this author.

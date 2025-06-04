@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Brent Weeks
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Brent
+surname: Weeks
 ---
 No additional information is available for this author.

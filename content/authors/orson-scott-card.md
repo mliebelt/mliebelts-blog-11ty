@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Orson Scott Card
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Orson Scott
+surname: Card
 ---
 No additional information is available for this author.

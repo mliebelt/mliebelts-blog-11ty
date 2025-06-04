@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Moe Teratos
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Moe
+surname: Teratos
 ---
 No additional information is available for this author.

@@ -10,7 +10,7 @@ eleventyNavigation:
 <h1>All Authors</h1>
 
 <div class="wa-grid authors"  style="--min-column-size: 20rem;">
-  {% set sortedAuthors = collections.authors | sort(attribute='data.name') %}
+  {% set sortedAuthors = collections.authors | sortByLastName %}
   {% for author in sortedAuthors %}
     {% set authorBooks = collections.posts | byAuthor(author.data.name) %}
     <wa-card class="card-overview" size="large" appearance="filled">

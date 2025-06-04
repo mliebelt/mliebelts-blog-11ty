@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Walter Tevis
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Walter
+surname: Tevis
 ---
 No additional information is available for this author.

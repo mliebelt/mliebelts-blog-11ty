@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Marcel Häußler
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Marcel
+surname: Häußler
 ---
 No additional information is available for this author.

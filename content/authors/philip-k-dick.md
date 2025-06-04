@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Philip K. Dick
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Philip K.
+surname: Dick
 ---
 No additional information is available for this author.

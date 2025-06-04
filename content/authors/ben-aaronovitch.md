@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Ben Aaronovitch
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Ben
+surname: Aaronovitch
 ---
 No additional information is available for this author.

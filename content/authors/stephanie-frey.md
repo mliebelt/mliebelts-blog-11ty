@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Stephanie Frey
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Stephanie
+surname: Frey
 ---
 No additional information is available for this author.

@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Katharina Seck
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Katharina
+surname: Seck
 ---
 No additional information is available for this author.

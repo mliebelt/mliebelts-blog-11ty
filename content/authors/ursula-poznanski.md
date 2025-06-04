@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Ursula Poznanski
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Ursula
+surname: Poznanski
 ---
 No additional information is available for this author.

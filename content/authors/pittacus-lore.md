@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Pittacus Lore
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Pittacus
+surname: Lore
 ---
 No additional information is available for this author.

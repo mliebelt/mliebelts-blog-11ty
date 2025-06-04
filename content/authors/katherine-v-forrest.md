@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Katherine V. Forrest
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Katherine V.
+surname: Forrest
 ---
 No additional information is available for this author.

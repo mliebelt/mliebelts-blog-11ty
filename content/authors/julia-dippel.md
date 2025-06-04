@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Julia Dippel
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Julia
+surname: Dippel
 ---
 No additional information is available for this author.

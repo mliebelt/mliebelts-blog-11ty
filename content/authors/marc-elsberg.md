@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Marc Elsberg
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Marc
+surname: Elsberg
 ---
 No additional information is available for this author.

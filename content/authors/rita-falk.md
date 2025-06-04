@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Rita Falk
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Rita
+surname: Falk
 ---
 No additional information is available for this author.

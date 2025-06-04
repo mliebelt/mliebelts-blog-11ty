@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Anne Weber
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Anne
+surname: Weber
 ---
 No additional information is available for this author.

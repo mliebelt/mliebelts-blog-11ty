@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Holger Karsten Schmidt
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Holger Karsten
+surname: Schmidt
 ---
 No additional information is available for this author.

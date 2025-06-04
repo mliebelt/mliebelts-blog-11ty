@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Virginia Boecker
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Virginia
+surname: Boecker
 ---
 No additional information is available for this author.

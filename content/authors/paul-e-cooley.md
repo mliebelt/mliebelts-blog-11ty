@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Paul E. Cooley
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Paul E.
+surname: Cooley
 ---
 No additional information is available for this author.

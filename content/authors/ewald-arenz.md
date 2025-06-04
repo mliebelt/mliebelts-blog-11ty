@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Ewald Arenz
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Ewald
+surname: Arenz
 ---
 No additional information is available for this author.

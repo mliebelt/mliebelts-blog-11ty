@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Christopher Ecker
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Christopher
+surname: Ecker
 ---
 No additional information is available for this author.

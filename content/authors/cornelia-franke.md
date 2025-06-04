@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Cornelia Franke
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Cornelia
+surname: Franke
 ---
 No additional information is available for this author.

@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Gavin Extence
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Gavin
+surname: Extence
 ---
 No additional information is available for this author.

@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Matthias Brandt
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Matthias
+surname: Brandt
 ---
 No additional information is available for this author.

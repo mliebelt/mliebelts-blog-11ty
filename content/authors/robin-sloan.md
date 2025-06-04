@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Robin Sloan
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Robin
+surname: Sloan
 ---
 No additional information is available for this author.

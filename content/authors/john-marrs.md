@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: John Marrs
-# email: optional@example.com
-# website: https://optional-website.com
+prename: John
+surname: Marrs
 ---
 No additional information is available for this author.

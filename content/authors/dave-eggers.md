@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Dave Eggers
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Dave
+surname: Eggers
 ---
 No additional information is available for this author.

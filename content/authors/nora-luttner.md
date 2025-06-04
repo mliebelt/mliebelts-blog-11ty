@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Nora Luttner
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Nora
+surname: Luttner
 ---
 No additional information is available for this author.

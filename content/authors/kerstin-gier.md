@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Kerstin Gier
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Kerstin
+surname: Gier
 ---
 No additional information is available for this author.

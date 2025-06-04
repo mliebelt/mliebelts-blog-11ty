@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Kathrin Wandres
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Kathrin
+surname: Wandres
 ---
 No additional information is available for this author.

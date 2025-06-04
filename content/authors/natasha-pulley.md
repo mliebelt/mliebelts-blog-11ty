@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Natasha Pulley
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Natasha
+surname: Pulley
 ---
 No additional information is available for this author.

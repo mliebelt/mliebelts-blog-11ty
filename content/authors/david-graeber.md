@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: David Graeber
-# email: optional@example.com
-# website: https://optional-website.com
+prename: David
+surname: Graeber
 ---
 No additional information is available for this author.

@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Anna Matheis
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Anna
+surname: Matheis
 ---
 No additional information is available for this author.

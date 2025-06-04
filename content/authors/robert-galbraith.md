@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Robert Galbraith
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Robert
+surname: Galbraith
 ---
 No additional information is available for this author.

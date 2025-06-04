@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Antje Wagner
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Antje
+surname: Wagner
 ---
 No additional information is available for this author.

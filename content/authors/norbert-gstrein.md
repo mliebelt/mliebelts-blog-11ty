@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Norbert Gstrein
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Norbert
+surname: Gstrein
 ---
 No additional information is available for this author.

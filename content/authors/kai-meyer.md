@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Kai Meyer
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Kai
+surname: Meyer
 ---
 No additional information is available for this author.

@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: C. L. Polk
-# email: optional@example.com
-# website: https://optional-website.com
+prename: C. L.
+surname: Polk
 ---
 No additional information is available for this author.

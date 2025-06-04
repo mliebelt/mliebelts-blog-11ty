@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Neal Stephenson
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Neal
+surname: Stephenson
 ---
 No additional information is available for this author.

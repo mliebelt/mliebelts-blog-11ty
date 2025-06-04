@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Alice Hasters
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Alice
+surname: Hasters
 ---
 No additional information is available for this author.

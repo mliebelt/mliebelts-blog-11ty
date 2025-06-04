@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Karen M. McManus
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Karen M.
+surname: McManus
 ---
 No additional information is available for this author.

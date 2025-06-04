@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Torsten Weitze
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Torsten
+surname: Weitze
 ---
 No additional information is available for this author.

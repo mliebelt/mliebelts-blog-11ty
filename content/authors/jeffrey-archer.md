@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Jeffrey Archer
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Jeffrey
+surname: Archer
 ---
 No additional information is available for this author.

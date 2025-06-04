@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Benedict Jacka
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Benedict
+surname: Jacka
 ---
 No additional information is available for this author.

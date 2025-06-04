@@ -110,6 +110,29 @@ module.exports = function (eleventyConfig) {
 		return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy");
 	});
 
+	// Add a filter for formatting author names in different ways
+	eleventyConfig.addFilter("formatName", function (author, format) {
+		// If author is a string, return it as is
+		if (typeof author === 'string') return author;
+		
+		// If author is an object with data property (collection item)
+		const data = author.data || author;
+		
+		// If no prename/surname, return name
+		if (!data.prename && !data.surname) return data.name || '';
+		
+		switch (format) {
+			case 'surname_first':
+				return data.prename ? `${data.surname}, ${data.prename}` : data.surname;
+			case 'initial_surname':
+				if (!data.prename) return data.surname;
+				const initial = data.prename.charAt(0);
+				return `${initial}. ${data.surname}`;
+			default:
+				return `${data.prename} ${data.surname}`.trim();
+		}
+	});
+
 	eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
 		// Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
 		return DateTime.fromJSDate(dateObj, { zone: zone || "utc" }).toFormat(format || "dd LLLL yyyy");
@@ -210,14 +233,19 @@ module.exports = function (eleventyConfig) {
 	// Add a custom filter to sort authors by last name
 	eleventyConfig.addFilter("sortByLastName", function (authors) {
 		return authors.sort((a, b) => {
+			// Use surname field if available, otherwise fall back to old method
+			if (a.data.surname && b.data.surname) {
+				return a.data.surname.localeCompare(b.data.surname);
+			}
+			
+			// Fall back to old method for backward compatibility
 			const aNameParts = a.data.name.split(" ");
 			const bNameParts = b.data.name.split(" ");
-
+			
 			// Get last names
 			const aLastName = aNameParts[aNameParts.length - 1];
 			const bLastName = bNameParts[bNameParts.length - 1];
-
-			// Compare last names first
+			
 			return aLastName.localeCompare(bLastName);
 		});
 	});

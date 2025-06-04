@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Sergej Lukianenko
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Sergej
+surname: Lukianenko
 ---
 No additional information is available for this author.

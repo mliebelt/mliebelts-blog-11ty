@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Markus Heitz
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Markus
+surname: Heitz
 ---
 No additional information is available for this author.

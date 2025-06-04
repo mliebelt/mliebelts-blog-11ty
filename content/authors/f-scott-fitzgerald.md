@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: F. Scott Fitzgerald
-# email: optional@example.com
-# website: https://optional-website.com
+prename: F. Scott
+surname: Fitzgerald
 ---
 No additional information is available for this author.

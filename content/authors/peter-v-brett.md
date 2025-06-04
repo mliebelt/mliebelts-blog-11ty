@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Peter V. Brett
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Peter V.
+surname: Brett
 ---
 No additional information is available for this author.

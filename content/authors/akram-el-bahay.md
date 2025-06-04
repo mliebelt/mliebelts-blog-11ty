@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Akram El-Bahay
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Akram
+surname: El-Bahay
 ---
 No additional information is available for this author.

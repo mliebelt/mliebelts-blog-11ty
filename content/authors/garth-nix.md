@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Garth Nix
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Garth
+surname: Nix
 ---
 No additional information is available for this author.

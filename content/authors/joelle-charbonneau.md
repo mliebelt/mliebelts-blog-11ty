@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Joelle Charbonneau
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Joelle
+surname: Charbonneau
 ---
 No additional information is available for this author.

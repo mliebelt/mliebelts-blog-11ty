@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Jodi Taylor
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Jodi
+surname: Taylor
 ---
 No additional information is available for this author.

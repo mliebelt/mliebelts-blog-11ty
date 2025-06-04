@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Sarah Beth Durst
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Sarah Beth
+surname: Durst
 ---
 No additional information is available for this author.

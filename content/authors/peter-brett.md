@@ -1,7 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Peter Brett
-# email: optional@example.com
-# website: https://optional-website.com
+prename: Peter
+surname: Brett
 ---
 No additional information is available for this author.
