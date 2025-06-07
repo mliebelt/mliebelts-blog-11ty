@@ -1,0 +1,20 @@
+---
+pagination:
+  data: collections.authors
+  size: 1
+  alias: author
+permalink: /books/by-author/{{ author.data.name | customSlugify }}/
+eleventyComputed:
+  pageNumber: 0
+---
+
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="refresh" content="0;url=/books/by-author/{{ author.data.name | customSlugify }}/page-1/">
+    <title>Redirecting to Books by {{ author.data.name }}</title>
+  </head>
+  <body>
+    <p>Redirecting to <a href="/books/by-author/{{ author.data.name | customSlugify }}/page-1/">Books by {{ author.data.name }}</a>...</p>
+  </body>
+</html>

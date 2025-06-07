@@ -1,0 +1,61 @@
+---
+pagination:
+  data: alphabet
+  size: 1
+  alias: letter
+permalink: /authors/letter-{{ letter | lower }}/
+layout: layouts/base.njk
+---
+
+<h1>Authors: {{ letter }}</h1>
+
+{% set authorsWithLetter = collections.authors | filterByFirstLetter(letter) %}
+
+{% from "alpha-index.njk" import alphaIndex %}
+{{ alphaIndex(letter) }}
+
+{% if authorsWithLetter.length > 0 %}
+  <div class="wa-grid authors" style="--min-column-size: 20rem;">
+    {% for author in authorsWithLetter | sortByLastName %}
+      {% set authorBooks = collections.posts | byAuthor(author.data.name) %}
+      <wa-card class="card-overview" size="large" appearance="filled">
+        <wa-flank>
+          <div class="author-image author-image-small">
+            {% if author.data.image %}
+              {% image "../authors/" + author.data.image, author.data.name, "100px" %}
+            {% else %}
+              <div class="author-image-placeholder">{{ author.data.name | getInitials }}</div>
+            {% endif %}
+          </div>
+          <div class="wa-flank:end author-name-container">
+            <a href="/authors/{{ author.data.name | customSlugify }}/" class="author-name">{{ author.data.name }}</a>
+          </div>
+        </wa-flank>
+        <div class="author-info">
+          {% if author.data.tagline %}
+            <p class="author-tagline">{{ author.data.tagline }}</p>
+          {% endif %}
+          <p class="book-count">{{ authorBooks.length }} book{% if authorBooks.length != 1 %}s{% endif %}</p>
+        </div>
+        <div class="author-books">
+          <h3>Latest Books</h3>
+          <ul class="book-list">
+            {% for post in authorBooks | sort(true, false, 'date') | limit(3) %}
+              <li>
+                <a href="{{ post.url }}">{{ post.data.title }}</a>
+                <span class="book-year">({{ post.date | dateYear }})</span>
+              </li>
+            {% endfor %}
+          </ul>
+          {% if authorBooks.length > 3 %}
+            <a href="/authors/{{ author.data.name | customSlugify }}/" class="view-all">View all books</a>
+          {% endif %}
+        </div>
+      </wa-card>
+    {% endfor %}
+  </div>
+{% else %}
+  <p>No authors found with surnames starting with '{{ letter }}'.</p>
+{% endif %}
+
+<p><a href="/authors/page-1/">Back to all authors</a></p>

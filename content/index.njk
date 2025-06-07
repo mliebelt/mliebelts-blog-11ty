@@ -9,6 +9,8 @@ numberOfLatestPostsToShow: 1000
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
 <h1>Die letzten {{ latestPostsCount }} Bücher</h1>
 
+<p>View all books with <a href="/books/page-1/">pagination</a>.</p>
+
 {% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
 {% set postslistCounter = postsCount %}
 {% include "postslist.njk" %}

@@ -1,0 +1,15 @@
+{# _includes/alpha-index.njk #}
+{% macro alphaIndex(currentLetter) %}
+  <nav class="alpha-index" aria-label="Alphabetical Index">
+    <ul class="alpha-list">
+      {% for letter in "ABCDEFGHIJKLMNOPQRSTUVWXYZ" %}
+        <li class="alpha-item{% if letter == currentLetter %} current{% endif %}">
+          <a href="/authors/letter-{{ letter | lower }}/"
+             {% if letter == currentLetter %}aria-current="page"{% endif %}>
+            {{ letter }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+{% endmacro %}

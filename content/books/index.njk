@@ -1,0 +1,62 @@
+---
+layout: layouts/base.njk
+title: Books by Date
+pagination:
+  data: collections.posts
+  size: 10
+  alias: books
+  reverse: true
+permalink: /books/page-{{ pagination.pageNumber + 1 }}/
+eleventyNavigation:
+  key: Books
+  order: 2
+---
+
+<h1>Books (Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages.length }})</h1>
+
+{% from "pagination-nav.njk" import paginationNav %}
+{{ paginationNav(pagination) }}
+
+<div class="postlist">
+  {% for post in books %}
+  <div class="postlist-item{% if post.url == url %} postlist-item-active{% endif %} wa-flank">
+    <div class="wa-flank">
+      {% if post.data.cover %}
+      <div class="postlist-cover">
+        <a href="{{ post.url }}">
+          {% image '../books/' + post.fileSlug + '/' + post.data.cover | replace("./", ""), post.data.title, "(min-width: 768px) 33.33vw, (min-width: 480px) 120px, 100vw" %}
+        </a>
+      </div>
+      {% endif %}
+      <div class="postlist-item-header wa-stack">
+        {% if post.data.author %}
+        <a href="/authors/{{ post.data.author | customSlugify }}/">{{ post.data.author }}</a>
+        {% endif %}
+        <a href="{{ post.url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
+        <span class="read-date">
+          <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | germanDate }}</time>
+        </span>
+      </div>
+    </div>
+    <div class="postlist-item-content wa-size-l">
+      {{ post.templateContent | excerpt | safe }}
+    </div>
+  </div>
+  <wa-divider></wa-divider>
+  {% endfor %}
+</div>
+
+{% from "pagination-nav.njk" import paginationNav %}
+{{ paginationNav(pagination) }}
+
+<div class="additional-views">
+  <h2>Additional Views</h2>
+  <ul>
+    <li><a href="/authors/page-1/">Browse by Authors</a></li>
+    <li>Browse Authors by Letter:
+      {% for letter in "ABCDEFGHIJKLMNOPQRSTUVWXYZ" %}
+        <a href="/authors/letter-{{ letter | lower }}/">{{ letter }}</a>{% if not loop.last %} | {% endif %}
+      {% endfor %}
+    </li>
+  </ul>
+</div>

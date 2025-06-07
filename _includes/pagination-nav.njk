@@ -1,0 +1,27 @@
+{# _includes/pagination-nav.njk #}
+{% macro paginationNav(pagination) %}
+  <nav class="pagination" aria-label="Pagination Navigation">
+    <ul class="pagination-list">
+      {% if pagination.href.previous %}
+        <li class="pagination-previous">
+          <a href="{{ pagination.href.previous }}" rel="prev">Previous</a>
+        </li>
+      {% endif %}
+      
+      {% for pageEntry in pagination.pages %}
+        <li class="pagination-item{% if loop.index0 == pagination.pageNumber %} current{% endif %}">
+          <a href="{{ pagination.hrefs[loop.index0] }}"
+             {% if loop.index0 == pagination.pageNumber %}aria-current="page"{% endif %}>
+            {{ loop.index }}
+          </a>
+        </li>
+      {% endfor %}
+      
+      {% if pagination.href.next %}
+        <li class="pagination-next">
+          <a href="{{ pagination.href.next }}" rel="next">Next</a>
+        </li>
+      {% endif %}
+    </ul>
+  </nav>
+{% endmacro %}

@@ -1,0 +1,135 @@
+/* Pagination styling */
+.pagination {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.pagination-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.pagination-item {
+  margin: 0 0.25rem;
+}
+
+.pagination-item a {
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+.pagination-item.current a {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.pagination-previous,
+.pagination-next {
+  margin: 0 0.5rem;
+}
+
+.pagination-previous a,
+.pagination-next a {
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+/* Alpha index styling */
+.alpha-index {
+  margin: 1rem 0;
+}
+
+.alpha-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.alpha-item {
+  margin: 0 0.25rem;
+}
+
+.alpha-item a {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.alpha-item.current a {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+/* Additional navigation styles */
+.additional-views {
+  margin: 2rem 0;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+}
+
+.additional-views h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.additional-views ul {
+  list-style: none;
+  padding: 0;
+}
+
+.additional-views li {
+  margin-bottom: 0.5rem;
+}
+
+.letter-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.letter-navigation a {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  margin: 0 0.1rem;
+  text-decoration: none;
+}
+
+.paginated-view {
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+
+.pagination-info {
+  margin: 1rem 0;
+  padding: 0.5rem;
+  background-color: #f8f9fa;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.pagination-info p {
+  margin: 0.25rem 0;
+}

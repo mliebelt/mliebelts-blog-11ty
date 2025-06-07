@@ -257,6 +257,40 @@ module.exports = function (eleventyConfig) {
 		});
 	});
 
+	// Filter to get the first letter of an author's surname
+	eleventyConfig.addFilter("firstLetter", function(author) {
+		return author.data.surname ? author.data.surname.charAt(0).toUpperCase() : '';
+	});
+
+	// Filter authors by the first letter of their surname
+	eleventyConfig.addFilter("filterByFirstLetter", function(authors, letter) {
+		return authors.filter(author => {
+			return author.data.surname && author.data.surname.charAt(0).toUpperCase() === letter;
+		});
+	});
+
+	// Group authors by the first letter of their surname
+	eleventyConfig.addFilter("groupByFirstLetter", function(authors) {
+		const grouped = {};
+		authors.forEach(author => {
+			const letter = author.data.surname.charAt(0).toUpperCase();
+			if (!grouped[letter]) {
+				grouped[letter] = [];
+			}
+			grouped[letter].push(author);
+		});
+		return grouped;
+	});
+
+	// Batch an array into chunks (for manual pagination)
+	eleventyConfig.addFilter("batch", function(array, size) {
+		const result = [];
+		for (let i = 0; i < array.length; i += size) {
+			result.push(array.slice(i, i + size));
+		}
+		return result;
+	});
+
 	// Customize Markdown library settings:
 	eleventyConfig.amendLibrary("md", (mdLib) => {
 		mdLib.use(markdownItAnchor, {
