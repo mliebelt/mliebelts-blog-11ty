@@ -3,7 +3,7 @@ layout: layouts/base.njk
 title: Books by Date
 pagination:
   data: collections.posts
-  size: 10
+  size: 15
   alias: books
   reverse: true
 permalink: /books/page-{{ pagination.pageNumber + 1 }}/
@@ -50,7 +50,6 @@ eleventyNavigation:
 {{ paginationNav(pagination) }}
 
 <div class="additional-views">
-  <h2>Additional Views</h2>
   <ul>
     <li><a href="/authors/page-1/">Browse by Authors</a></li>
     <li>Browse Authors by Letter:
