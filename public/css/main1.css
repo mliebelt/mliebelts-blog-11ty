@@ -30,7 +30,7 @@ a:focus {
 }
 
 /* Style buttons with brand color. That is the toggle button for dark/light, and does not work. */
-wa-button.wa-filled {
+wa-button {
 	background-color: var(--brand-color);
 	color: white;
 }

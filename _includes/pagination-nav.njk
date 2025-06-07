@@ -1,27 +1,28 @@
 {# _includes/pagination-nav.njk #}
 {% macro paginationNav(pagination) %}
   <nav class="pagination" aria-label="Pagination Navigation">
-    <ul class="pagination-list">
+    <wa-button-group orientation="horizontal">
       {% if pagination.href.previous %}
-        <li class="pagination-previous">
-          <a href="{{ pagination.href.previous }}" rel="prev">Previous</a>
-        </li>
+        <wa-button pill class="wa-filled  wa-size-l" appearance="outlined">
+          <a href="{{ pagination.href.previous }}" rel="prev">Vorherige</a>
+          <wa-icon name="chevron-left"></wa-icon>
+        </wa-button>
       {% endif %}
       
       {% for pageEntry in pagination.pages %}
-        <li class="pagination-item{% if loop.index0 == pagination.pageNumber %} current{% endif %}">
+        <wa-button  pill class="wa-filled  wa-size-l" {% if loop.index0 == pagination.pageNumber %} appearance="accent" variant="brand"{% else %} appearance="outlined"{% endif %} appearance="">
           <a href="{{ pagination.hrefs[loop.index0] }}"
              {% if loop.index0 == pagination.pageNumber %}aria-current="page"{% endif %}>
             {{ loop.index }}
-          </a>
-        </li>
+          </a></wa-button>
       {% endfor %}
       
       {% if pagination.href.next %}
-        <li class="pagination-next">
-          <a href="{{ pagination.href.next }}" rel="next">Next</a>
-        </li>
+        <wa-button pill class="wa-filled  wa-size-l" appearance="outlined">
+          <a href="{{ pagination.href.next }}" rel="next">Nächste</a>
+          <wa-icon name="chevron-right"></wa-icon>
+        </wa-button>
       {% endif %}
-    </ul>
+    </wa-button-group>
   </nav>
 {% endmacro %}

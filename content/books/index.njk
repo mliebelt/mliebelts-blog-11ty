@@ -12,7 +12,7 @@ eleventyNavigation:
   order: 2
 ---
 
-<h1>Books (Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages.length }})</h1>
+<h1>Bücher (Seite {{ pagination.pageNumber + 1 }} von {{ pagination.pages.length }})</h1>
 
 {% from "pagination-nav.njk" import paginationNav %}
 {{ paginationNav(pagination) }}

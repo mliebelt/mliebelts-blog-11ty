@@ -7,7 +7,7 @@ permalink: /authors/letter-{{ letter | lower }}/
 layout: layouts/base.njk
 ---
 
-<h1>Authors: {{ letter }}</h1>
+<h1>Autoren: {{ letter }}</h1>
 
 {% set authorsWithLetter = collections.authors | filterByFirstLetter(letter) %}
 
@@ -58,4 +58,4 @@ layout: layouts/base.njk
   <p>No authors found with surnames starting with '{{ letter }}'.</p>
 {% endif %}
 
-<p><a href="/authors/page-1/">Back to all authors</a></p>
+<p><a href="/authors/page-1/">Zurück zu allen Autoren</a></p>

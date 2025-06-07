@@ -11,10 +11,15 @@ eleventyNavigation:
   order: 2
 ---
 
-<h1>Authors (Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages.length }})</h1>
+<h1>Autoren (Seite {{ pagination.pageNumber + 1 }} von {{ pagination.pages.length }})</h1>
 
 <!-- Sort authors by surname -->
 {% set sortedAuthors = paginatedAuthors | sortByLastName %}
+
+{% from "pagination-nav.njk" import paginationNav %}
+{{ paginationNav(pagination) }}
+
+<wa-divider></wa-divider>
 
 <div class="wa-grid authors" style="--min-column-size: 20rem;">
   {% for author in sortedAuthors %}
@@ -55,9 +60,6 @@ eleventyNavigation:
     </wa-card>
   {% endfor %}
 </div>
-
-{% from "pagination-nav.njk" import paginationNav %}
-{{ paginationNav(pagination) }}
 
 <p>Browse authors by letter:</p>
 {% from "alpha-index.njk" import alphaIndex %}
