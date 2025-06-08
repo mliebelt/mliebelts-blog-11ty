@@ -17,6 +17,8 @@ eleventyNavigation:
 {% from "pagination-nav.njk" import paginationNav %}
 {{ paginationNav(pagination) }}
 
+<wa-divider></wa-divider>
+
 <div class="postlist">
   {% for post in books %}
   <div class="postlist-item{% if post.url == url %} postlist-item-active{% endif %} wa-flank">
