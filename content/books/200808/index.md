@@ -11,6 +11,7 @@ isbn: "3551354014"
 tags:
   - "fantasy"
   - "reihe"
+reread: ["2025-05-31"]
 ---
 ## Muss das sein?
 
