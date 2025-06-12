@@ -61,7 +61,7 @@
 
 .read-date {
 	font-size: 0.9em;
-	color: #666;
+	color: var(--highlight-color-bg);
 }
 
 /* Mobile portrait */
