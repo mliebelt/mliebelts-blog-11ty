@@ -8,6 +8,7 @@ const pluginBundle = require("@11ty/eleventy-plugin-bundle");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 // const { EleventyWaybackMachinePlugin } = require("@11ty/eleventy-plugin-wayback-machine");
+const { compress } = require("eleventy-plugin-compress");
 
 const pluginDrafts = require("./eleventy.config.drafts.cjs");
 const pluginImages = require("./eleventy.config.images.cjs");
@@ -15,13 +16,15 @@ const pluginAuthors = require("./eleventy.config.authors.cjs");
 
 /** @param {import('@11ty/eleventy').UserConfig} eleventyConfig */
 module.exports = function (eleventyConfig) {
+	eleventyConfig.addPlugin(compress);
+
 	// Add new excerpt filter
 	eleventyConfig.addFilter("excerpt", (content) => {
 		if (!content) return "";
 		// Preserve h1-h6 tags
-		let excerpt = content.replace(/<(?!\/?h[1-6])[^>]+>/g, '');
-		excerpt = excerpt.split(' ').slice(0, 50).join(' ');
-		return excerpt + '...';
+		let excerpt = content.replace(/<(?!\/?h[1-6])[^>]+>/g, "");
+		excerpt = excerpt.split(" ").slice(0, 50).join(" ");
+		return excerpt + "...";
 	});
 
 	async function imageShortcode(src, alt, sizes) {
@@ -113,18 +116,18 @@ module.exports = function (eleventyConfig) {
 	// Add a filter for formatting author names in different ways
 	eleventyConfig.addFilter("formatName", function (author, format) {
 		// If author is a string, return it as is
-		if (typeof author === 'string') return author;
-		
+		if (typeof author === "string") return author;
+
 		// If author is an object with data property (collection item)
 		const data = author.data || author;
-		
+
 		// If no prename/surname, return name
-		if (!data.prename && !data.surname) return data.name || '';
-		
+		if (!data.prename && !data.surname) return data.name || "";
+
 		switch (format) {
-			case 'surname_first':
+			case "surname_first":
 				return data.prename ? `${data.surname}, ${data.prename}` : data.surname;
-			case 'initial_surname':
+			case "initial_surname":
 				if (!data.prename) return data.surname;
 				const initial = data.prename.charAt(0);
 				return `${initial}. ${data.surname}`;
@@ -160,17 +163,17 @@ module.exports = function (eleventyConfig) {
 	});
 
 	// Add a global slugify function for use in templates
-		eleventyConfig.addGlobalData("slugify", function(str) {
-			if (typeof str !== 'string') {
-				return '';
-			}
-			return slugify(str, {
-				replacement: "-",
-				remove: /[*+~.()'"!:@]/g,
-				lower: true,
-				strict: true,
-			});
+	eleventyConfig.addGlobalData("slugify", function (str) {
+		if (typeof str !== "string") {
+			return "";
+		}
+		return slugify(str, {
+			replacement: "-",
+			remove: /[*+~.()'"!:@]/g,
+			lower: true,
+			strict: true,
 		});
+	});
 
 	// Get the first `n` elements of a collection.
 	eleventyConfig.addFilter("head", (array, n) => {
@@ -237,15 +240,15 @@ module.exports = function (eleventyConfig) {
 			if (a.data.surname && b.data.surname) {
 				return a.data.surname.localeCompare(b.data.surname);
 			}
-			
+
 			// Fall back to old method for backward compatibility
 			const aNameParts = a.data.name.split(" ");
 			const bNameParts = b.data.name.split(" ");
-			
+
 			// Get last names
 			const aLastName = aNameParts[aNameParts.length - 1];
 			const bLastName = bNameParts[bNameParts.length - 1];
-			
+
 			return aLastName.localeCompare(bLastName);
 		});
 	});
@@ -258,21 +261,21 @@ module.exports = function (eleventyConfig) {
 	});
 
 	// Filter to get the first letter of an author's surname
-	eleventyConfig.addFilter("firstLetter", function(author) {
-		return author.data.surname ? author.data.surname.charAt(0).toUpperCase() : '';
+	eleventyConfig.addFilter("firstLetter", function (author) {
+		return author.data.surname ? author.data.surname.charAt(0).toUpperCase() : "";
 	});
 
 	// Filter authors by the first letter of their surname
-	eleventyConfig.addFilter("filterByFirstLetter", function(authors, letter) {
-		return authors.filter(author => {
+	eleventyConfig.addFilter("filterByFirstLetter", function (authors, letter) {
+		return authors.filter((author) => {
 			return author.data.surname && author.data.surname.charAt(0).toUpperCase() === letter;
 		});
 	});
 
 	// Group authors by the first letter of their surname
-	eleventyConfig.addFilter("groupByFirstLetter", function(authors) {
+	eleventyConfig.addFilter("groupByFirstLetter", function (authors) {
 		const grouped = {};
-		authors.forEach(author => {
+		authors.forEach((author) => {
 			const letter = author.data.surname.charAt(0).toUpperCase();
 			if (!grouped[letter]) {
 				grouped[letter] = [];
@@ -283,7 +286,7 @@ module.exports = function (eleventyConfig) {
 	});
 
 	// Batch an array into chunks (for manual pagination)
-	eleventyConfig.addFilter("batch", function(array, size) {
+	eleventyConfig.addFilter("batch", function (array, size) {
 		const result = [];
 		for (let i = 0; i < array.length; i += size) {
 			result.push(array.slice(i, i + size));

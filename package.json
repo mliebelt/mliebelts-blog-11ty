@@ -33,6 +33,7 @@
     "@11ty/eleventy-plugin-bundle": "^1.0.4",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "eleventy-plugin-compress": "^1.0.5",
     "glob": "^11.0.2",
     "gray-matter": "^4.0.3",
     "luxon": "^3.5.0",
