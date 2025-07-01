@@ -31,18 +31,18 @@ a:focus {
 
 /* Style buttons with brand color. That is the toggle button for dark/light, and does not work. */
 wa-button {
-	background-color: var(--brand-color);
+	/* background-color: var(--brand-color); */
 	color: white;
 }
 
-.header-buttons wa-button {
+/* .header-buttons wa-button {
 	font-size: 150%;
-}
+} */
 
-wa-button.wa-filled:hover,
+/* wa-button.wa-filled:hover,
 wa-button.wa-filled:focus {
 	background-color: color-mix(in srgb, var(--brand-color) 10%, black);
-}
+} */
 
 /* Position the darkLight button to top right all the time. */
 #darkLight {
@@ -83,8 +83,7 @@ main {
 	height: 100px;
 	border-radius: 50%;
 }
-
-.author-image-large {
+d Frank Elling .author-image-large {
 	width: 200px;
 	height: 200px;
 	border-radius: 50%; /* Changed to 50% to make it circular */
