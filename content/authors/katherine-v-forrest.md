@@ -4,4 +4,4 @@ name: Katherine V. Forrest
 prename: Katherine V.
 surname: Forrest
 ---
-No additional information is available for this author.
+Keine zusätzlichen Informationen verfügbar für diesen Autor.

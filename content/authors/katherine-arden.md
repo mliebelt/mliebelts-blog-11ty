@@ -4,4 +4,4 @@ name: Katherine Arden
 prename: Katherine
 surname: Arden
 ---
-No additional information is available for this author.
+Keine zusätzlichen Informationen verfügbar für diesen Autor.

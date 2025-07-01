@@ -4,4 +4,4 @@ name: Virginia Boecker
 prename: Virginia
 surname: Boecker
 ---
-No additional information is available for this author.
+Keine zusätzlichen Informationen verfügbar für diesen Autor.

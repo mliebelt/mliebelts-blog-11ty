@@ -4,4 +4,4 @@ name: Gavin Extence
 prename: Gavin
 surname: Extence
 ---
-No additional information is available for this author.
+Keine zusätzlichen Informationen verfügbar für diesen Autor.

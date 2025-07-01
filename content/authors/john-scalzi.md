@@ -4,4 +4,4 @@ name: John Scalzi
 prename: John
 surname: Scalzi
 ---
-No additional information is available for this author.
+Keine zusätzlichen Informationen verfügbar für diesen Autor.

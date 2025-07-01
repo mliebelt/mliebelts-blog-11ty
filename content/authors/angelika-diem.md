@@ -4,4 +4,4 @@ name: Angelika Diem
 prename: Angelika
 surname: Diem
 ---
-No additional information is available for this author.
+Keine zusätzlichen Informationen verfügbar für diesen Autor.

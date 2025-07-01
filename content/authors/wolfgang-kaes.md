@@ -4,4 +4,4 @@ name: Wolfgang Kaes
 prename: Wolfgang
 surname: Kaes
 ---
-No additional information is available for this author.
+Keine zusätzlichen Informationen verfügbar für diesen Autor.

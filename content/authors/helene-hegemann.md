@@ -4,4 +4,4 @@ name: Helene Hegemann
 prename: Helene
 surname: Hegemann
 ---
-No additional information is available for this author.
+Keine zusätzlichen Informationen verfügbar für diesen Autor.

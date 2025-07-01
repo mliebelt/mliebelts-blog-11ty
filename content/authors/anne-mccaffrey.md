@@ -4,4 +4,4 @@ name: Anne McCaffrey
 prename: Anne
 surname: McCaffrey
 ---
-No additional information is available for this author.
+Keine zusätzlichen Informationen verfügbar für diesen Autor.

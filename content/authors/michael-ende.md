@@ -4,4 +4,4 @@ name: Michael Ende
 prename: Michael
 surname: Ende
 ---
-No additional information is available for this author.
+Keine zusätzlichen Informationen verfügbar für diesen Autor.

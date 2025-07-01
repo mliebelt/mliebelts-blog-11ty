@@ -4,4 +4,4 @@ name: Ursula Poznanski
 prename: Ursula
 surname: Poznanski
 ---
-No additional information is available for this author.
+Keine zusätzlichen Informationen verfügbar für diesen Autor.

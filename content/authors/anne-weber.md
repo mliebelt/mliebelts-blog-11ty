@@ -4,4 +4,4 @@ name: Anne Weber
 prename: Anne
 surname: Weber
 ---
-No additional information is available for this author.
+Keine zusätzlichen Informationen verfügbar für diesen Autor.

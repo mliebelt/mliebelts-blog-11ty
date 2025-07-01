@@ -4,4 +4,4 @@ name: C. L. Polk
 prename: C. L.
 surname: Polk
 ---
-No additional information is available for this author.
+Keine zusätzlichen Informationen verfügbar für diesen Autor.

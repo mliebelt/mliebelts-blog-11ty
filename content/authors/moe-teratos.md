@@ -4,4 +4,4 @@ name: Moe Teratos
 prename: Moe
 surname: Teratos
 ---
-No additional information is available for this author.
+Keine zusätzlichen Informationen verfügbar für diesen Autor.

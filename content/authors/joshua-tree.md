@@ -4,4 +4,4 @@ name: Joshua Tree
 prename: Joshua
 surname: Tree
 ---
-No additional information is available for this author.
+Keine zusätzlichen Informationen verfügbar für diesen Autor.

@@ -4,4 +4,4 @@ name: Tim Butcher
 prename: Tim
 surname: Butcher
 ---
-No additional information is available for this author.
+Keine zusätzlichen Informationen verfügbar für diesen Autor.

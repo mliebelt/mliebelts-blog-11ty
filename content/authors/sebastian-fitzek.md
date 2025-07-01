@@ -4,4 +4,4 @@ name: Sebastian Fitzek
 prename: Sebastian
 surname: Fitzek
 ---
-No additional information is available for this author.
+Keine zusätzlichen Informationen verfügbar für diesen Autor.

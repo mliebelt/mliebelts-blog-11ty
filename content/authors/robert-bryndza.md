@@ -4,4 +4,4 @@ name: Robert Bryndza
 prename: Robert
 surname: Bryndza
 ---
-No additional information is available for this author.
+Keine zusätzlichen Informationen verfügbar für diesen Autor.

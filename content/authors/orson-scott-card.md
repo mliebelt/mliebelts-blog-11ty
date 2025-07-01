@@ -4,4 +4,4 @@ name: Orson Scott Card
 prename: Orson Scott
 surname: Card
 ---
-No additional information is available for this author.
+Keine zusätzlichen Informationen verfügbar für diesen Autor.

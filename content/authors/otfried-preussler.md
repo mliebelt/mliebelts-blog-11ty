@@ -4,4 +4,4 @@ name: Otfried Preußler
 prename: Otfried
 surname: Preußler
 ---
-No additional information is available for this author.
+Keine zusätzlichen Informationen verfügbar für diesen Autor.

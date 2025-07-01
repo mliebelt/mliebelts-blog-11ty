@@ -4,4 +4,4 @@ name: Matthias Brandt
 prename: Matthias
 surname: Brandt
 ---
-No additional information is available for this author.
+Keine zusätzlichen Informationen verfügbar für diesen Autor.

@@ -4,4 +4,4 @@ name: Fred Vargas
 prename: Fred
 surname: Vargas
 ---
-No additional information is available for this author.
+Keine zusätzlichen Informationen verfügbar für diesen Autor.

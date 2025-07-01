@@ -4,4 +4,4 @@ name: Juli Zeh
 prename: Juli
 surname: Zeh
 ---
-No additional information is available for this author.
+Keine zusätzlichen Informationen verfügbar für diesen Autor.

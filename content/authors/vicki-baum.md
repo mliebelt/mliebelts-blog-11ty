@@ -4,4 +4,4 @@ name: Vicki Baum
 prename: Vicki
 surname: Baum
 ---
-No additional information is available for this author.
+Keine zusätzlichen Informationen verfügbar für diesen Autor.

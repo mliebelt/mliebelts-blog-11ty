@@ -4,4 +4,4 @@ name: Anna Matheis
 prename: Anna
 surname: Matheis
 ---
-No additional information is available for this author.
+Keine zusätzlichen Informationen verfügbar für diesen Autor.

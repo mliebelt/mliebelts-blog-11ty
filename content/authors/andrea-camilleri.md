@@ -4,4 +4,4 @@ name: Andrea Camilleri
 prename: Andrea
 surname: Camilleri
 ---
-No additional information is available for this author.
+Keine zusätzlichen Informationen verfügbar für diesen Autor.

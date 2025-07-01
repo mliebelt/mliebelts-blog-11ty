@@ -4,4 +4,4 @@ name: George Orwell
 prename: George
 surname: Orwell
 ---
-No additional information is available for this author.
+Keine zusätzlichen Informationen verfügbar für diesen Autor.

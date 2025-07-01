@@ -4,4 +4,4 @@ name: Katharina Seck
 prename: Katharina
 surname: Seck
 ---
-No additional information is available for this author.
+Keine zusätzlichen Informationen verfügbar für diesen Autor.

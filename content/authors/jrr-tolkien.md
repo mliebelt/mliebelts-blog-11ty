@@ -5,4 +5,4 @@ image: J._R._R._Tolkien.jpg
 prename: J.R.R.
 surname: Tolkien
 ---
-No additional information is available for this author.
+Keine zusätzlichen Informationen verfügbar für diesen Autor.

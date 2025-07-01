@@ -4,4 +4,4 @@ name: Nele Neuhaus
 prename: Nele
 surname: Neuhaus
 ---
-No additional information is available for this author.
+Keine zusätzlichen Informationen verfügbar für diesen Autor.

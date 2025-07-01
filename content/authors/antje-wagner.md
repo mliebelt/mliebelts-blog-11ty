@@ -4,4 +4,4 @@ name: Antje Wagner
 prename: Antje
 surname: Wagner
 ---
-No additional information is available for this author.
+Keine zusätzlichen Informationen verfügbar für diesen Autor.

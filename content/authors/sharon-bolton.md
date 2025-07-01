@@ -4,4 +4,4 @@ name: Sharon Bolton
 prename: Sharon
 surname: Bolton
 ---
-No additional information is available for this author.
+Keine zusätzlichen Informationen verfügbar für diesen Autor.

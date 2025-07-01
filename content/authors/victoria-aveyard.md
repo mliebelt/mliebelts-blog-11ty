@@ -4,4 +4,4 @@ name: Victoria Aveyard
 prename: Victoria
 surname: Aveyard
 ---
-No additional information is available for this author.
+Keine zusätzlichen Informationen verfügbar für diesen Autor.

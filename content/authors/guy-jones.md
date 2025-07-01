@@ -4,4 +4,4 @@ name: Guy Jones
 prename: Guy
 surname: Jones
 ---
-No additional information is available for this author.
+Keine zusätzlichen Informationen verfügbar für diesen Autor.
