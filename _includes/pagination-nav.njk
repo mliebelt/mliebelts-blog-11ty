@@ -4,13 +4,13 @@
     <wa-button-group orientation="horizontal">
       {% if pagination.href.previous %}
         <wa-button pill class="wa-filled  wa-size-l" appearance="outlined" href="{{ pagination.href.previous}}">
-          Vorherige
+          Neuer
           <wa-icon name="chevron-left"></wa-icon>
         </wa-button>
       {% endif %}
 
       {% for pageEntry in pagination.pages %}
-        <wa-button  pill class="wa-filled  wa-size-l" {% if loop.index0 == pagination.pageNumber %} appearance="accent" variant="brand"{% else %}
+        <wa-button  pill class="wa-filled  wa-size-l" {% if loop.index0 == pagination.pageNumber %} appearance="filled" variant="brand"{% else %}
         appearance="outlined"{% endif %} href="{{ pagination.hrefs[loop.index0] }}">
           {{ loop.index }}
         </wa-button>
@@ -18,7 +18,7 @@
 
       {% if pagination.href.next %}
         <wa-button pill class="wa-filled  wa-size-l" appearance="outlined" href="{{ pagination.href.next }}">
-          Nächste
+          Älter
           <wa-icon name="chevron-right"></wa-icon>
         </wa-button>
       {% endif %}

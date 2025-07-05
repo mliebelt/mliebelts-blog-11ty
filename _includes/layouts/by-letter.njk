@@ -5,6 +5,9 @@ pagination:
   alias: letter
 permalink: /authors/letter-{{ letter | lower }}/
 layout: layouts/base.njk
+eleventyNavigation:
+  key: Autoren
+  order: 2
 ---
 
 <h1>Autoren: {{ letter }}</h1>
@@ -40,7 +43,7 @@ layout: layouts/base.njk
           <p class="book-count">{{ authorBooks.length }} book{% if authorBooks.length != 1 %}s{% endif %}</p>
         </div>
         <div class="author-books">
-          <h3>Latest Books</h3>
+          <h3>Letzte Bücher</h3>
           <ul class="book-list">
             {% for post in authorBooks | sort(true, false, 'date') | limit(3) %}
               <li>
@@ -50,14 +53,12 @@ layout: layouts/base.njk
             {% endfor %}
           </ul>
           {% if authorBooks.length > 3 %}
-            <a href="/authors/{{ author.data.name | customSlugify }}/" class="view-all">View all books</a>
+            <a href="/authors/{{ author.data.name | customSlugify }}/" class="view-all">Alle Bücher anzeigen</a>
           {% endif %}
         </div>
       </wa-card>
     {% endfor %}
   </div>
 {% else %}
-  <p>No authors found with surnames starting with '{{ letter }}'.</p>
+  <p>Keine Autoren gefunden, deren Nachname mit '{{ letter }}' beginnt.</p>
 {% endif %}
-
-<p><a href="/authors/page-1/">Zurück zu allen Autoren</a></p>
