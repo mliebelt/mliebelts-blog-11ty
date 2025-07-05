@@ -3,6 +3,7 @@ layout: layouts/base.njk
 eleventyNavigation:
   key: Über mich
   order: 3
+  icon: face-smile
 ---
 # Über mich
 

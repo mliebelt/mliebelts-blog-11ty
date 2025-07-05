@@ -68,7 +68,7 @@
     <div class="wa-flank">
         <wa-button-group label="Navigation" class="header-buttons">
             {%- for entry in collections.all | eleventyNavigation %}
-                <wa-button pill class="wa-filled" href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</wa-button>
+              <wa-button variant="neutral" appearance="filled outlined" size="large" href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}><wa-icon slot="start" name="{{ entry.icon }}" label="{{ entry.icon }}"></wa-icon>{{ entry.title }}</wa-button>
             {%- endfor %}
         </wa-button-group>
     </div>
