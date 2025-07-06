@@ -2,23 +2,7 @@
 {% macro alphaIndex(currentLetter) %}
   <nav class="alpha-index" aria-label="Alphabetical Index">
   	<wa-button-group orientation="horizontal">
-      {% for letter in "ABCDEFGHI" %}
-      	<wa-button class="wa-filled  wa-size-l" {% if letter == currentLetter %} appearance="filled" variant="brand"{% else %}
-        	appearance="outlined"{% endif %} href="/authors/letter-{{ letter | lower }}/">
-         	{{ letter }}
-        </wa-button>
-      {% endfor %}
-    </wa-button-group>
-    <wa-button-group orientation="horizontal">
-      {% for letter in "JKLMNOPQR" %}
-      	<wa-button class="wa-filled  wa-size-l" {% if letter == currentLetter %} appearance="filled" variant="brand"{% else %}
-        	appearance="outlined"{% endif %} href="/authors/letter-{{ letter | lower }}/">
-         	{{ letter }}
-        </wa-button>
-      {% endfor %}
-    </wa-button-group>
-    <wa-button-group orientation="horizontal">
-      {% for letter in "STUVWXYZ" %}
+      {% for letter in "ABCDEFGHIJKLMNOPQRSTUVWXYZ" %}
       	<wa-button class="wa-filled  wa-size-l" {% if letter == currentLetter %} appearance="filled" variant="brand"{% else %}
         	appearance="outlined"{% endif %} href="/authors/letter-{{ letter | lower }}/">
          	{{ letter }}
