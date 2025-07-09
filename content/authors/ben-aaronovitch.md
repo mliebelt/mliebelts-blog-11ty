@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Ben Aaronovitch
+title: Ben Aaronovitch
 prename: Ben
 surname: Aaronovitch
 ---

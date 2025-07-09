@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Barry Eisler
+title: Barry Eisler
 image: barry-eisler.jpg
 image-reference: >-
   Von Disorderly - Flickr, CC BY-SA 2.0,

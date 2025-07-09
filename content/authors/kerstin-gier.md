@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Kerstin Gier
+title: Kerstin Gier
 prename: Kerstin
 surname: Gier
 ---

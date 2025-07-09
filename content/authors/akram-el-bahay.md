@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Akram El-Bahay
+title: Akram El-Bahay
 prename: Akram
 surname: El-Bahay
 ---

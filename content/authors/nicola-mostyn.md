@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Nicola Mostyn
+title: Nicola Mostyn
 prename: Nicola
 surname: Mostyn
 ---

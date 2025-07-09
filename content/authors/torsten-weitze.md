@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Torsten Weitze
+title: Torsten Weitze
 prename: Torsten
 surname: Weitze
 ---

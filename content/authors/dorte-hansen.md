@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Dörte Hansen
+title: Dörte Hansen
 image: dorte-hansen.jpg
 prename: Dörte
 surname: Hansen

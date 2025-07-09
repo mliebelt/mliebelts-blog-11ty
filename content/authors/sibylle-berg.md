@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Sibylle Berg
+title: Sibylle Berg
 prename: Sibylle
 surname: Berg
 ---

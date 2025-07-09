@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Moe Teratos
+title: Moe Teratos
 prename: Moe
 surname: Teratos
 ---

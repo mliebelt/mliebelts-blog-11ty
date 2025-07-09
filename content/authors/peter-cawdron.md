@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Peter Cawdron
+title: Peter Cawdron
 prename: Peter
 surname: Cawdron
 ---

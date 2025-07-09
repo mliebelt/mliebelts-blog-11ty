@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Patrick Rothfuss
+title: Patrick Rothfuss
 posttype: author
 homepage: 'https://www.patrickrothfuss.com/content/index.asp'
 wiki: 'https://de.wikipedia.org/wiki/Patrick_Rothfuss'

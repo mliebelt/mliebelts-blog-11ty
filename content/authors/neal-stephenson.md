@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Neal Stephenson
+title: Neal Stephenson
 prename: Neal
 surname: Stephenson
 ---

@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Norbert Gstrein
+title: Norbert Gstrein
 prename: Norbert
 surname: Gstrein
 ---

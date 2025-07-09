@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Holger Karsten Schmidt
+title: Holger Karsten Schmidt
 prename: Holger Karsten
 surname: Schmidt
 ---

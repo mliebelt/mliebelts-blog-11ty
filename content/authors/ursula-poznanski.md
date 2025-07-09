@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Ursula Poznanski
+title: Ursula Poznanski
 prename: Ursula
 surname: Poznanski
 ---

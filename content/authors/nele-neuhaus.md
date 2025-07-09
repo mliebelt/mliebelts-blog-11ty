@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Nele Neuhaus
+title: Nele Neuhaus
 prename: Nele
 surname: Neuhaus
 ---

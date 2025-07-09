@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Matt Haig
+title: Matt Haig
 prename: Matt
 surname: Haig
 ---

@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Colson Whitehead
+title: Colson Whitehead
 prename: Colson
 surname: Whitehead
 ---

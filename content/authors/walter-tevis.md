@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Walter Tevis
+title: Walter Tevis
 prename: Walter
 surname: Tevis
 ---

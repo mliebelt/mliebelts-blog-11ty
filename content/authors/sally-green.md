@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Sally Green
+title: Sally Green
 prename: Sally
 surname: Green
 ---

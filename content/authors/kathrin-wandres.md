@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Kathrin Wandres
+title: Kathrin Wandres
 prename: Kathrin
 surname: Wandres
 ---

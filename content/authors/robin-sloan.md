@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Robin Sloan
+title: Robin Sloan
 prename: Robin
 surname: Sloan
 ---

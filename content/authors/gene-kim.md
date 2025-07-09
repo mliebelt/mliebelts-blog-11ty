@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Gene Kim
+title: Gene Kim
 prename: Gene
 surname: Kim
 ---

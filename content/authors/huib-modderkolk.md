@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Huib Modderkolk
+title: Huib Modderkolk
 prename: Huib
 surname: Modderkolk
 ---

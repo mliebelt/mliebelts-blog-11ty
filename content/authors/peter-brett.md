@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Peter Brett
+title: Peter Brett
 prename: Peter
 surname: Brett
 ---

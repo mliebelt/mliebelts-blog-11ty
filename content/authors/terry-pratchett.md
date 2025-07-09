@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Terry Pratchett
+title: Terry Pratchett
 prename: Terry
 surname: Pratchett
 ---

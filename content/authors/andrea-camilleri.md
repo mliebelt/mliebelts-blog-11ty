@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Andrea Camilleri
+title: Andrea Camilleri
 prename: Andrea
 surname: Camilleri
 ---

@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Cassandra Clare
+title: Cassandra Clare
 prename: Cassandra
 surname: Clare
 ---

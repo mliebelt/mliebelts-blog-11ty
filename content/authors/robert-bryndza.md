@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Robert Bryndza
+title: Robert Bryndza
 prename: Robert
 surname: Bryndza
 ---

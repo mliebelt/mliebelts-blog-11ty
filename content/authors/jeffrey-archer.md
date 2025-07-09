@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Jeffrey Archer
+title: Jeffrey Archer
 prename: Jeffrey
 surname: Archer
 ---

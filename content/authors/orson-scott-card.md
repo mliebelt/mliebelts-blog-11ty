@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Orson Scott Card
+title: Orson Scott Card
 prename: Orson Scott
 surname: Card
 ---

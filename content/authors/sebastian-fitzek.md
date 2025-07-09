@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Sebastian Fitzek
+title: Sebastian Fitzek
 prename: Sebastian
 surname: Fitzek
 ---

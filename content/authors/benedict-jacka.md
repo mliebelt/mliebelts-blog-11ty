@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Benedict Jacka
+title: Benedict Jacka
 prename: Benedict
 surname: Jacka
 ---
