@@ -41,7 +41,7 @@ eleventyNavigation:
           {% if author.data.tagline %}
             <p class="author-tagline">{{ author.data.tagline }}</p>
           {% endif %}
-          <p class="book-count">{{ authorBooks.length }} book{% if authorBooks.length != 1 %}s{% endif %}</p>
+          <p class="book-count">{{ authorBooks.length }}{% if authorBooks.length != 1 %} Bücher {% else %} Buch {% endif %}</p>
         </div>
         <div class="author-books">
           <h3>Letzte Bücher</h3>
