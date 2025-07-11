@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Joelle Charbonneau
+title: Joelle Charbonneau
 prename: Joelle
 surname: Charbonneau
 ---

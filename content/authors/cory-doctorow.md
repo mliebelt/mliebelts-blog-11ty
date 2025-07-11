@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Cory Doctorow
+title: Cory Doctorow
 prename: Cory
 surname: Doctorow
 ---

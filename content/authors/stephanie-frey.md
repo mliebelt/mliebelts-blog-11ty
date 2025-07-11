@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Stephanie Frey
+title: Stephanie Frey
 prename: Stephanie
 surname: Frey
 ---

@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: J.K. Rowling
+title: J.K. Rowling
 image: J._K._Rowling.jpg
 prename: J.K.
 surname: Rowling

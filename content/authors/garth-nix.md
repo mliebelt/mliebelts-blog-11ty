@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Garth Nix
+title: Garth Nix
 prename: Garth
 surname: Nix
 ---

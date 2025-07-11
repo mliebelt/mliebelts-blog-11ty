@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Christian Kracht
+title: Christian Kracht
 prename: Christian
 surname: Kracht
 ---

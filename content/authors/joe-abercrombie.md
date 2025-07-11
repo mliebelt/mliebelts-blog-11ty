@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Joe Abercrombie
+title: Joe Abercrombie
 posttype: author
 homepage: 'https://www.joeabercrombie.com/'
 wiki: 'https://de.wikipedia.org/wiki/Joe_Abercrombie'

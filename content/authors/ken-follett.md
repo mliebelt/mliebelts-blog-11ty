@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Ken Follett
+title: Ken Follett
 prename: Ken
 surname: Follett
 ---

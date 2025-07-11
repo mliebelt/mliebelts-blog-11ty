@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Victoria Aveyard
+title: Victoria Aveyard
 prename: Victoria
 surname: Aveyard
 ---

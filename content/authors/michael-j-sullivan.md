@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Michael J. Sullivan
+title: Michael J. Sullivan
 prename: Michael J.
 surname: Sullivan
 ---

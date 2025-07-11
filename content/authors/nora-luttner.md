@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Nora Luttner
+title: Nora Luttner
 prename: Nora
 surname: Luttner
 ---

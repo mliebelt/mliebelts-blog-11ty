@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Sharon Bolton
+title: Sharon Bolton
 prename: Sharon
 surname: Bolton
 ---

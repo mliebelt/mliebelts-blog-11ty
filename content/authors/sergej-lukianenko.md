@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Sergej Lukianenko
+title: Sergej Lukianenko
 prename: Sergej
 surname: Lukianenko
 ---

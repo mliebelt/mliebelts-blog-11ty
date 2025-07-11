@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Ewald Arenz
+title: Ewald Arenz
 prename: Ewald
 surname: Arenz
 ---

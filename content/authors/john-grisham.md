@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: John Grisham
+title: John Grisham
 prename: John
 surname: Grisham
 ---

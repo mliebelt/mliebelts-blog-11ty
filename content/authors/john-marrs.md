@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: John Marrs
+title: John Marrs
 prename: John
 surname: Marrs
 ---

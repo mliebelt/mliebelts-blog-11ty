@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Zaia Alexander
+title: Zaia Alexander
 prename: Zaia
 surname: Alexander
 ---

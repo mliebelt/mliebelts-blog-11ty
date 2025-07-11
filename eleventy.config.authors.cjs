@@ -56,15 +56,16 @@ module.exports = function (eleventyConfig) {
 
 			// Create the author file with minimal frontmatter
 			// Split name into prename and surname
-			const nameParts = author.split(' ');
+			const nameParts = author.split(" ");
 			const surname = nameParts.pop(); // Last word is surname
-			const prename = nameParts.join(' '); // Everything else is prename
+			const prename = nameParts.join(" "); // Everything else is prename
 
 			const content = `---
 layout: layouts/author.njk
 name: ${author}
 prename: ${prename}
 surname: ${surname}
+title: "Autor: ${author}"
 ---
 Keine weitere Info zum Autor verfügbar.
 `;

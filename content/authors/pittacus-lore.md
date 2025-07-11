@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Pittacus Lore
+title: Pittacus Lore
 prename: Pittacus
 surname: Lore
 ---

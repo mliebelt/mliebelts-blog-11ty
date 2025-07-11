@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Alice Walker
+title: Alice Walker
 prename: Alice
 surname: Walker
 ---

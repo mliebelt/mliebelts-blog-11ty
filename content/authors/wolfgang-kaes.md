@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Wolfgang Kaes
+title: Wolfgang Kaes
 prename: Wolfgang
 surname: Kaes
 ---

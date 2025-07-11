@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Genevieve Cogman
+title: Genevieve Cogman
 prename: Genevieve
 surname: Cogman
 ---

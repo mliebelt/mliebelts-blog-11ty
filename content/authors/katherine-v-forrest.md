@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Katherine V. Forrest
+title: Katherine V. Forrest
 prename: Katherine V.
 surname: Forrest
 ---

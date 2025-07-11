@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Neil Gaiman
+title: Neil Gaiman
 prename: Neil
 surname: Gaiman
 ---

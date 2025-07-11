@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Marc Elsberg
+title: Marc Elsberg
 prename: Marc
 surname: Elsberg
 ---

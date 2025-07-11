@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Christopher Ecker
+title: Christopher Ecker
 prename: Christopher
 surname: Ecker
 ---

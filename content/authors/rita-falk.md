@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Rita Falk
+title: Rita Falk
 prename: Rita
 surname: Falk
 ---

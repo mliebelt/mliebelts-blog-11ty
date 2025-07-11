@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Stephan R. Bellern
+title: Stephan R. Bellern
 prename: Stephan R.
 surname: Bellern
 ---

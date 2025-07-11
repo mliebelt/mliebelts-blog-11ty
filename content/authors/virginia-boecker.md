@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Virginia Boecker
+title: Virginia Boecker
 prename: Virginia
 surname: Boecker
 ---

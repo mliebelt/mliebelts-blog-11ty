@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Otfried Preußler
+title: Otfried Preußler
 prename: Otfried
 surname: Preußler
 ---

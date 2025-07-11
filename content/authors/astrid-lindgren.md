@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Astrid Lindgren
+title: Astrid Lindgren
 prename: Astrid
 surname: Lindgren
 ---

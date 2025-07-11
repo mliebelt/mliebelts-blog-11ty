@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Martha Wells
+title: Martha Wells
 prename: Martha
 surname: Wells
 ---

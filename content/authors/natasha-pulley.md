@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Natasha Pulley
+title: Natasha Pulley
 prename: Natasha
 surname: Pulley
 ---

@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Philip K. Dick
+title: Philip K. Dick
 prename: Philip K.
 surname: Dick
 ---

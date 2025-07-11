@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Cixin Liu
+title: Cixin Liu
 prename: Cixin
 surname: Liu
 ---

@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Katherine Arden
+title: Katherine Arden
 prename: Katherine
 surname: Arden
 ---

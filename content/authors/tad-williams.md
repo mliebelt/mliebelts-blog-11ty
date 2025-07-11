@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Tad Williams
+title: Tad Williams
 posttype: author
 homepage: 'http://www.tadwilliams.de/'
 wiki: 'https://de.wikipedia.org/wiki/Tad_Williams'

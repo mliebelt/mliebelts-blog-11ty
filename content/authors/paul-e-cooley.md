@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Paul E. Cooley
+title: Paul E. Cooley
 prename: Paul E.
 surname: Cooley
 ---

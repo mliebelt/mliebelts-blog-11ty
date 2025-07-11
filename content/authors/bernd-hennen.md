@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Bernd Hennen
+title: Bernd Hennen
 prename: Bernd
 surname: Hennen
 ---

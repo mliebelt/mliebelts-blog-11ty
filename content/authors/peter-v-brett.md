@@ -1,6 +1,7 @@
 ---
 layout: layouts/author.njk
 name: Peter V. Brett
+title: Peter V. Brett
 prename: Peter V.
 surname: Brett
 ---
