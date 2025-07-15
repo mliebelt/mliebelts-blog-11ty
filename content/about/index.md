@@ -1,5 +1,6 @@
 ---
 layout: layouts/base.njk
+title: "Über mich"
 eleventyNavigation:
   key: Über mich
   order: 3
