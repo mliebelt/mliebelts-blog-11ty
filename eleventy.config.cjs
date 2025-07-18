@@ -315,14 +315,14 @@ module.exports = function (eleventyConfig) {
 		return collectionApi.getFilteredByGlob("content/authors/*.md");
 	});
 
-	eleventyConfig.addCollection("debugPosts", function (collectionApi) {
-		const posts = collectionApi.getFilteredByGlob("content/books/**/*.md");
-		console.log("\nDEBUG - Book authors:");
-		posts.forEach((post) => {
-			console.log(`  "${post.data.title}" by "${post.data.author}"`);
-		});
-		return posts;
-	});
+	// eleventyConfig.addCollection("debugPosts", function (collectionApi) {
+	// 	const posts = collectionApi.getFilteredByGlob("content/books/**/*.md");
+	// 	console.log("\nDEBUG - Book authors:");
+	// 	posts.forEach((post) => {
+	// 		console.log(`  "${post.data.title}" by "${post.data.author}"`);
+	// 	});
+	// 	return posts;
+	// });
 
 	// Features to make your build faster (when you need them)
 

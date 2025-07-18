@@ -14,6 +14,6 @@ Der letzte Versuch war nun, das Layout (mit Hilfe von WebAwesome) "schöner" hin
 
 Wer mag, kann hier Details finden:
 
-* [Das öffentliche Repository](https://github.com/mliebelt/mliebelts-blog-11ty) mit allen Details samt Deployment bei Netlify (das `README.md` sollte ich mal überarbeiten).
+* [Das öffentliche Repository](https://github.com/mliebelt/mliebelts-blog-11ty) mit allen Details samt Deployment bei Netlify.
 * [Mein Profil](https://github.com/mliebelt) mit meinen vielen Aktivitäten rund ums Schach.
 * [Unsere Club-Website](https://schachclub-stetten.de/) auf der wir auch einiges technisch nett umgesetzt haben.

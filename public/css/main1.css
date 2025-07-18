@@ -47,7 +47,7 @@ wa-button.wa-filled:focus {
 /* Position the darkLight button to top right all the time. */
 #darkLight {
 	position: fixed;
-	top: 10px;
+	top: 30px;
 	right: 10px;
 	z-index: 1000;
 }
