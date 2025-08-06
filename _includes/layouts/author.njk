@@ -41,7 +41,7 @@ layout: layouts/base.njk
   {% set authorBooks = collections.posts | byAuthor(name) | sort(true, false, 'date') %}
   {% if authorBooks.length > 0 %}
     <p class="book-count">
-      {{ authorBooks.length }} Buch{% if authorBooks.length != 1 %}er{% endif %}
+      {{ authorBooks.length }} {% if authorBooks.length != 1 %}Bücher {% else %}Buch {% endif %}
       {% if authorBooks.length > 10 %}
         <a href="/books/by-author/{{ surname | slugify }}{% if prename %}-{{ prename | slugify }}{% endif %}/" class="paginated-view">(View paginated)</a>
       {% endif %}
