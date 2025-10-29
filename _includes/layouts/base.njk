@@ -4,12 +4,16 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>{{ title or metadata.title }}</title>
+		<script src="https://kit.webawesome.com/26156d7209944224.js" crossorigin="anonymous"></script>
+		<script type="module">
+  		import { setBasePath } from '/dist/webawesome.js';
+ 			setBasePath('/dist');
+		</script>
+
 		<meta name="description" content="{{ description or metadata.description }}">
 		<link rel="icon" href="/favicon-32x32.png" type="image/png">
-		<link rel="stylesheet" href="https://early.webawesome.com/webawesome@3.0.0-beta.4/dist/styles/themes/playful.css" />
-		<link rel="stylesheet" href="https://early.webawesome.com/webawesome@3.0.0-beta.4/dist/styles/webawesome.css" />
-		<link rel="stylesheet" href="https://early.webawesome.com/webawesome@3.0.0-beta.4/dist/styles/color/vogue.css" />
-		<script type="module" src="https://early.webawesome.com/webawesome@3.0.0-beta.4/dist/webawesome.loader.js"></script>
+		<link rel="stylesheet" href="/dist/styles/webawesome.css" />
+		<script type="module" src="/dist/webawesome.loader.js"></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 		{#- My own stylesheets #}
@@ -60,7 +64,7 @@
 	<!--	<a href="#skip" class="visually-hidden">Skip to main content</a> -->
 
 <wa-button-group label="Navigation" class="header-buttons">
-<wa-button id="darkLight" size="large" pill variant="neutral" appearance="filled outlined"  onclick="toggleTheme()">
+<wa-button id="darkLight" size="large" pill variant="neutral" appearance="filled-outlined"  onclick="toggleTheme()">
     <i class="fas fa-moon wa-dark-only"></i>
     <i class="fas fa-sun wa-light-only"></i>
 </wa-button>
@@ -70,7 +74,7 @@
     <div class="wa-flank">
         <wa-button-group label="Navigation" class="header-buttons">
             {%- for entry in collections.all | eleventyNavigation %}
-              <wa-button variant="neutral" appearance="filled outlined" size="large" href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}><wa-icon slot="start" name="{{ entry.icon }}" label="{{ entry.icon }}"></wa-icon>{{ entry.title }}</wa-button>
+              <wa-button variant="neutral" appearance="filled-outlined" size="large" href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}><wa-icon slot="start" name="{{ entry.icon }}" label="{{ entry.icon }}"></wa-icon>{{ entry.title }}</wa-button>
             {%- endfor %}
         </wa-button-group>
     </div>

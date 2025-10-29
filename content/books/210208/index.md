@@ -5,7 +5,7 @@ layout: layouts/post.njk
 path: "/210208"
 category: "Category"
 posttype: "book"
-author: "Nora Luttner"
+author: "Nora Luttmer"
 cover: "./dunkelkinder.png"
 isbn: "9783958352506"
 tags:
