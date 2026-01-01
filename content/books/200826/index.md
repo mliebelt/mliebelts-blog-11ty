@@ -11,6 +11,7 @@ isbn: "3551354022"
 tags:
   - "fantasy"
   - reihe
+reread: ["2025-06-12"]
 ---
 ## Zweiter Teil von H.P.
 
