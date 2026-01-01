@@ -9,3 +9,7 @@ Der letzte Versuch war nun, das Layout (mit Hilfe von WebAwesome) "schöner" hin
 * [11ty](https://www.11ty.dev/) als minimales Setup for Markdown-Content
 * [WebAwesome](https://webawesome.com/) ein Versuch, das Kickstarter-Projekt von FontAwesome einzusetzen
 * und dazu noch viel Hilfe von verschiedenen LLMs, um möglichst schnell interessante Inhalte zu bekommen
+
+## Veröffentlichung
+
+Ihr findet den Blog im Netz unter https://mliebelts-books.netlify.app/.
