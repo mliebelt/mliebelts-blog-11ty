@@ -52,14 +52,3 @@ eleventyNavigation:
 
 {% from "pagination-nav.njk" import paginationNav %}
 {{ paginationNav(pagination) }}
-
-<div class="additional-views">
-  <ul>
-    <li><a href="/authors/page-1/">Browse by Authors</a></li>
-    <li>Browse Authors by Letter:
-      {% for letter in "ABCDEFGHIJKLMNOPQRSTUVWXYZ" %}
-        <a href="/authors/letter-{{ letter | lower }}/">{{ letter }}</a>{% if not loop.last %} | {% endif %}
-      {% endfor %}
-    </li>
-  </ul>
-</div>
