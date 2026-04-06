@@ -4,3 +4,4 @@ package-lock.json
 .cache
 .aider*
 .idea
+CLAUDE.md

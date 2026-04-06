@@ -9,8 +9,9 @@ eleventyNavigation:
   key: Autoren
   order: 2
   icon: person
+eleventyComputed:
+  title: "Autoren mit {{ letter | lower }}"
 ---
-{% set title = "Autoren mit " + letter | lower %}
 
 <h1>Autoren: {{ letter }}</h1>
 
