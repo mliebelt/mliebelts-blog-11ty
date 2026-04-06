@@ -1,12 +1,13 @@
 ---
 layout: layouts/base.njk
-title: Books by Date
 pagination:
   data: collections.posts
   size: 25
   alias: books
   reverse: true
 permalink: /books/page-{{ pagination.pageNumber + 1 }}/
+eleventyComputed:
+  title: "Bücher Seite {{ pagination.pageNumber + 1 }}"
 eleventyNavigation:
   key: Books
   order: 1
