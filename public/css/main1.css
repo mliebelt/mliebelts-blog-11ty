@@ -29,6 +29,10 @@ a:focus {
 	color: color-mix(in srgb, var(--brand-color) 70%, black);
 }
 
+/* Style the divider all the time with brand color. */
+wa-divider {
+	color: var(--brand-color);
+}
 /* Style buttons with brand color. That is the toggle button for dark/light, and does not work. */
 wa-button {
 	/* background-color: var(--brand-color); */

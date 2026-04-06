@@ -5,4 +5,3 @@ prename: Brandon
 surname: Sanderson
 title: "Autor: Brandon Sanderson"
 ---
-Keine weitere Info zum Autor verfügbar.

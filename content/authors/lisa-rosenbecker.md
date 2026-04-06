@@ -5,4 +5,3 @@ title: Lisa Rosenbecker
 prename: Lisa
 surname: Rosenbecker
 ---
-Keine weitere Info zum Autor verfügbar.

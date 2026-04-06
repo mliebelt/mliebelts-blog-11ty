@@ -29,6 +29,8 @@ layout: layouts/base.njk
   {% if content %}
     <div class="author-bio">
       {{ content | safe }}
+
+      <wa-divider style="--color: var(--brand-color);--width: 2px;"></wa-divider>
     </div>
   {% else %}
     <div class="author-bio">

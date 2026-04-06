@@ -5,4 +5,3 @@ title: Nena Tramountani
 prename: Nena
 surname: Tramountani
 ---
-Keine weitere Info zum Autor verfügbar.

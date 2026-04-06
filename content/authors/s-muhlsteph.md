@@ -5,4 +5,3 @@ title: S. Mühlsteph
 prename: S.
 surname: Mühlsteph
 ---
-Keine weitere Info zum Autor verfügbar.

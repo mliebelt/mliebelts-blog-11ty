@@ -67,7 +67,6 @@ prename: ${prename}
 surname: ${surname}
 title: "Autor: ${author}"
 ---
-Keine weitere Info zum Autor verfügbar.
 `;
 
 			fs.writeFileSync(authorFile, content);
