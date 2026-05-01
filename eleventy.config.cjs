@@ -16,6 +16,9 @@ const pluginAuthors = require("./eleventy.config.authors.cjs");
 
 /** @param {import('@11ty/eleventy').UserConfig} eleventyConfig */
 module.exports = function (eleventyConfig) {
+	// Ignore staging directory
+	eleventyConfig.ignores.add("content/books-staging/**");
+
 	eleventyConfig.addPlugin(compress);
 
 	// Add new excerpt filter
